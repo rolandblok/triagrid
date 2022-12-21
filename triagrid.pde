@@ -1,73 +1,57 @@
-import controlP5.*;
+import uibooster.*;
 
 import java.util.*;
 
-int X_PIXS = 1400;
-int Y_PIXS = 1400;
-int X_PITCH = 100/2;
-int Y_PITCH = 87/2;
-int X_OFFSET = X_PITCH/2;
+
+//https://milchreis.github.io/uibooster-for-processing/reference/uibooster/UiBooster.html
+UiBooster booster;
+
+boolean draw_fill;
+boolean draw_lines;
+boolean draw_grid;
+
+
+int X_GRID = 50;
+int Y_GRID = 50;
 Vector<MyPoint> grid;
 Vector<MyElement> drawables;
 
 MyElement closest_element = null;
 MyElement possible_new_element = null;
 
-ControlP5 cp5;
-
+MyPitch my_pitch;
 
 void createGrid() {
-  println("createAll");
+  println("createGrid");
   grid = new Vector<MyPoint>();
+  my_pitch = new MyPitch(50);
 
-  int x = 0;
-  int y = 0;
-  int yi = 0;
-  while (y < Y_PIXS) {
-    int x_off = 0;
-    if ((yi%2) == 1) {
-      x_off = X_OFFSET;
-    }
-    while (x < X_PIXS) {
-      MyPoint v = new MyPoint(new PVector(x+x_off, y));
+  for (int y = 0;  y < Y_GRID; y++) {
+    float offset = 0;
+    if ((y%2) == 1) {
+      offset = 0.5;
+    } 
+    for (int x =0;  x < X_GRID; x++) {
+      MyPoint v = new MyPoint(x+offset, y);
       grid.add(v);
-      x += X_PITCH;
     }
-    y += Y_PITCH;
-    yi++;
-    x = 0;
   }
+
 }
+
 
 void setup() {
   size(1400, 1400);
   
-  cp5 = new ControlP5(this);
-  
-  PFont font = createFont("arial",10);
-  cp5.addTextfield("FILE")
-     .setPosition(10,50)
-     .setSize(200,40)
-     .setFont(font)
-     .setFocus(true)
-     .setColor(color(255,255,255))
-     ;
-  
-  File data_dir = new File(sketchPath() + "/data");
-  File[] json_files = data_dir.listFiles();
-  printArray(json_files);
-  String[] json_array = Arrays.stream(json_files).map(Object::toString).toArray(String[]::new);
-  List json_list = Arrays.asList(json_array);
-  cp5.addScrollableList("json files")
-     .setPosition(10, 100)
-     .setSize(200, 100)
-     .setBarHeight(20)
-     .setItemHeight(20)
-     .addItems(json_list);
 
+  draw_fill = true;
+  draw_lines = true;
+  draw_grid = true;
+  
   createGrid();
   drawables = new Vector<MyElement>();
 
+  booster = new UiBooster();
 
 }
 
@@ -75,11 +59,18 @@ void draw() {
   background(255, 255, 255);
   noFill();
   stroke(0, 0, 0);
-  for (MyElement gp : grid) {
-    gp.draw();
+  if (draw_grid) {
+    for (MyElement gp : grid) {
+      gp.draw();
+    }
   }
   for (MyElement e : drawables) {
-    e.draw();
+    if ((e instanceof MyTriangle) && draw_fill) {
+      e.draw();
+    }
+    if ((e instanceof MyLine) && draw_lines) {
+      e.draw();
+    }
   }
 
   if (closest_element != null) {
@@ -112,9 +103,11 @@ void keyPressed() {
       }
   } else if (key == 's') {
     println("save json");
+    String filename = booster.showTextInputDialog("Filename");
+    filename = "data/" + filename + ".json";
+
     JSONObject main_json = new JSONObject();
-    main_json.setInt("X_PITCH", X_PITCH);
-    main_json.setInt("Y_PITCH", Y_PITCH);
+    main_json.setJSONObject("my_pitch", my_pitch.getJSON());
     JSONArray drawables_json = new JSONArray();
     main_json.setJSONArray("drawables", drawables_json);
     int i = 0;
@@ -122,33 +115,38 @@ void keyPressed() {
       drawables_json.setJSONObject(i, e.getJSON());
       i++;
     }
-    saveJSONObject(main_json, "data/drawables.json");
+    saveJSONObject(main_json, filename);
 
   } else if (key == 'l') {
     println("loading");
     
+    File data_dir = new File(sketchPath() + "/data");
+    File[] json_files = data_dir.listFiles();
+    String[] json_array = Arrays.stream(json_files).map(Object::toString).toArray(String[]::new);
+    List json_list = Arrays.asList(json_array);
+    
+    String selected_file = booster.showSelectionDialog("select a file", "Select a File", json_list);
+    println ("selected : " + selected_file);
+    
     drawables = new Vector<MyElement>();
-    JSONObject main_json = loadJSONObject( "data/drawables.json");
-    X_PITCH = main_json.getInt("X_PITCH");
-    Y_PITCH = main_json.getInt("Y_PITCH");
+    JSONObject main_json = loadJSONObject( selected_file);
+    my_pitch = new MyPitch(main_json.getJSONObject("my_pitch"));
+    
     JSONArray drawables_json = main_json.getJSONArray("drawables");
+    println("loading " + drawables_json.size() + " drawables");
     for (int i = 0; i < drawables_json.size(); i++) {
-      println("elemeent " + i);
       JSONObject drawable_json = drawables_json.getJSONObject(i);
-      if (drawable_json.getString("type").equals("triangle")) {
+      if (drawable_json.getString("type").equals(MyTriangle.my_type)) {
         drawables.add(new MyTriangle(drawable_json));
-        println("elemeent " + "triangle");
-      } else if (drawable_json.getString("type").equals("line")) {
+      } else if (drawable_json.getString("type").equals(MyLine.my_type)) {
         drawables.add(new MyLine(drawable_json));
-        println("elemeent " + "line");
-      } else if (drawable_json.getString("type").equals("point")) {
+      } else if (drawable_json.getString("type").equals(MyPoint.my_type)) {
         drawables.add(new MyPoint(drawable_json));
-        println("elemeent " + "point");
       } else {
-        println("not : " + drawable_json.getString("type"));
       }
     }
     createGrid();
+    
   } else if ((key == '1') || (key == '2') || (key == '3')) {
     println("add");
     Enumeration<MyElement> drawa_enum = drawables.elements();
@@ -167,22 +165,28 @@ void keyPressed() {
   } else if (key == 'n') {
     createGrid();
     drawables = new Vector<MyElement>();
+  } else if (key == 'z') {
+      draw_grid = !draw_grid;
+  } else if (key == 'x') {
+      draw_lines = !draw_lines;
+  } else if (key == 'c') {
+      draw_fill = !draw_fill;
   }
 }
 
 MyElement closest (PVector p, boolean add) {
   
   Enumeration<MyPoint> elem_enum = grid.elements();
-  MyElement closest1 = elem_enum.nextElement();
-  MyElement closest2 = elem_enum.nextElement();
-  MyElement closest3 = elem_enum.nextElement();
-  float dist1 = closest1.dist(p);
-  float dist2 = closest2.dist(p);
-  float dist3 = closest3.dist(p);
+  MyPoint closest1 = elem_enum.nextElement();
+  MyPoint closest2 = elem_enum.nextElement();
+  MyPoint closest3 = elem_enum.nextElement();
+  float dist1 = closest1.distS(p);
+  float dist2 = closest2.distS(p);
+  float dist3 = closest3.distS(p);
 
   while (elem_enum.hasMoreElements()) {
-    MyElement closest_check = elem_enum.nextElement();
-    float dist_check = closest_check.dist(p);
+    MyPoint closest_check = elem_enum.nextElement();
+    float dist_check = closest_check.distS(p);
     if (dist_check < dist1) {
       closest3 = closest2;
       closest2 = closest1;
@@ -202,10 +206,11 @@ MyElement closest (PVector p, boolean add) {
   }
   
   if (add) {
-    MyTriangle t = new MyTriangle(closest1.p, closest2.p, closest3.p);
-    float dist_t = t.dist(p);
-    MyLine l = new MyLine(closest1.p, closest2.p);
-    float dist_l = l.dist(p);    
+    
+    MyTriangle t = new MyTriangle(closest1, closest2, closest3);
+    float dist_t = t.distS(p);
+    MyLine l = new MyLine(closest1, closest2);
+    float dist_l = l.distS(p);    
     if (dist_t < dist_l) {
       possible_new_element = t;
     } else {
