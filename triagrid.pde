@@ -93,8 +93,9 @@ void mousePressed() {
 void keyPressed() {
   println("key : " + key);
   if ((key == DELETE) || (key == 'q')) {
-      println("delete");
+      println("delete " + possible_new_element);
       Enumeration<MyElement> elem_enum = drawables.elements();
+      println("delete search from " + drawables.size() + " elements");
       while (elem_enum.hasMoreElements()) {
          MyElement check_elem = elem_enum.nextElement();
          if (check_elem.equals(possible_new_element)) {

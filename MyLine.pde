@@ -19,6 +19,9 @@ class MyLine extends MyElement {
   MyLine(MyPoint p1_arg, MyPoint p2_arg) {
     this(p1_arg, p2_arg, color(0, 0, 0));
   }
+  String toString(){
+    return "MyLine p1 " + p1 + " ;p2 " + p2; 
+  }
 
   void draw() {
     draw(c);

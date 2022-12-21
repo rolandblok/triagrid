@@ -13,6 +13,10 @@ class MyTriangle extends MyElement {
     
     c = c_arg;
   }
+  
+  String toString(){
+    return "MyTriangle p1 " + p1 + " ;p2 " + p2 + " ;p3 " + p3; 
+  }
 
   MyTriangle(MyPoint p1_arg, MyPoint p2_arg, MyPoint p3_arg, color c_arg) {
     createMe(p1_arg, p2_arg, p3_arg, c_arg);

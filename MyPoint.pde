@@ -16,6 +16,10 @@ class MyPoint extends MyElement {
     this(x_arg,  y_arg,  color(0,0,0));
   }
   
+  String toString(){
+    return "MyPoint p " + p; 
+  }
+  
   void draw(color c_arg) {
      stroke(c_arg);
      PVector sp = getSP();
