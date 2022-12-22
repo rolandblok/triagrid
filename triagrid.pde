@@ -93,15 +93,11 @@ void mousePressed() {
 void keyPressed() {
   println("key : " + key);
   if ((key == DELETE) || (key == 'q')) {
-      println("delete " + possible_new_element);
-      Enumeration<MyElement> elem_enum = drawables.elements();
-      println("delete search from " + drawables.size() + " elements");
-      while (elem_enum.hasMoreElements()) {
-         MyElement check_elem = elem_enum.nextElement();
-         if (check_elem.equals(possible_new_element)) {
-           drawables.remove(check_elem);
-         }
-      }
+    MyElement check_elem = exists(possible_new_element);
+    if (check_elem != null) {
+      drawables.remove(check_elem);
+    }
+
   } else if (key == 's') {
     println("save json");
     String filename = booster.showTextInputDialog("Filename");
@@ -147,6 +143,13 @@ void keyPressed() {
       }
     }
     createGrid();
+    
+  } else if (key == 'f') {
+    if (MyTriangle.class == possible_new_element.getClass()) {
+      
+      floodfill((MyTriangle)possible_new_element);
+    }
+    
     
   } else if ((key == '1') || (key == '2') || (key == '3')) {
     println("add");
@@ -221,4 +224,31 @@ MyElement closest (PVector p, boolean add) {
   }
 
   return closest1;
+}
+
+void floodfill(MyTriangle t){
+  MyLine l1 = new MyLine(t.p1, t.p2);
+  MyElement e = exists(l1);
+  if (e != null) {
+    float avlx = (l1.p1.p.x + l1.p2.p.x)/2.0; 
+    float x     = 2*avlx - t.p3.p.x; 
+    
+  }
+  
+  MyLine l2 = new MyLine(t.p2, t.p3);
+  MyLine l3 = new MyLine(t.p3, t.p1);
+  
+}
+
+MyElement exists(MyElement e) {
+  MyElement exister = null;
+  Enumeration<MyElement> elem_enum = drawables.elements();
+  while (elem_enum.hasMoreElements()) {
+     MyElement check_elem = elem_enum.nextElement();
+     if (check_elem.equals(e)) {
+         drawables.remove(check_elem);
+         exister = e;
+     }
+  }
+  return exister;
 }

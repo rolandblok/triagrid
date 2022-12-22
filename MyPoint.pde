@@ -16,8 +16,9 @@ class MyPoint extends MyElement {
     this(x_arg,  y_arg,  color(0,0,0));
   }
   
-  String toString(){
-    return "MyPoint p " + p; 
+  @Override
+  public String toString(){
+    return "MyPoint p" + p; 
   }
   
   void draw(color c_arg) {
@@ -29,14 +30,15 @@ class MyPoint extends MyElement {
     draw(c);
   }
 
+  @Override
   public boolean equals(Object obj) {
     float acc = 0.001;
-        if(obj instanceof MyPoint) {
-          MyPoint pc = (MyPoint) obj;
-          return (fEQ(p.x, pc.p.x, acc) && fEQ(p.y, pc.p.y, acc));
-        }
-        return false;       
+    if(obj instanceof MyPoint) {
+      MyPoint pc = (MyPoint) obj;
+      return (fEQ(p.x, pc.p.x, acc) && fEQ(p.y, pc.p.y, acc));
     }
+    return false;       
+  }
   
   JSONObject getJSON(){
     JSONObject json = new JSONObject();

@@ -19,8 +19,10 @@ class MyLine extends MyElement {
   MyLine(MyPoint p1_arg, MyPoint p2_arg) {
     this(p1_arg, p2_arg, color(0, 0, 0));
   }
-  String toString(){
-    return "MyLine p1 " + p1 + " ;p2 " + p2; 
+  
+  @Override
+  public String toString(){
+    return "MyLine p1:" + p1 + " ;p2:" + p2; 
   }
 
   void draw() {
@@ -33,12 +35,12 @@ class MyLine extends MyElement {
     line(sp1.x, sp1.y, sp2.x, sp2.y);
   }
 
-  
+  @Override
   public boolean equals(Object obj) {
       if(obj instanceof MyLine) {
         MyLine l_check = (MyLine) obj;
-        return (((p1 == l_check.p1) && (p2 == l_check.p2)) ||
-                ((p1 == l_check.p2) && (p2 == l_check.p1))   );
+        return (((p1.equals(l_check.p1)) && (p2.equals(l_check.p2))) ||
+                ((p1.equals(l_check.p2)) && (p2.equals(l_check.p1)))   );
         
       }
       return false;       

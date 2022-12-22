@@ -1,0 +1,46 @@
+{
+  "drawables": [
+    {
+      "p1": {
+        "color": -16777216,
+        "x": 10.5,
+        "y": 11,
+        "type": "point"
+      },
+      "p2": {
+        "color": -16777216,
+        "x": 11.5,
+        "y": 11,
+        "type": "point"
+      },
+      "color": -16777216,
+      "type": "line"
+    },
+    {
+      "p1": {
+        "color": -16777216,
+        "x": 12,
+        "y": 12,
+        "type": "point"
+      },
+      "p2": {
+        "color": -16777216,
+        "x": 11,
+        "y": 12,
+        "type": "point"
+      },
+      "p3": {
+        "color": -16777216,
+        "x": 11.5,
+        "y": 11,
+        "type": "point"
+      },
+      "color": -10197916,
+      "type": "triangle"
+    }
+  ],
+  "my_pitch": {
+    "screen_scale": 50,
+    "type": "MyPitch"
+  }
+}

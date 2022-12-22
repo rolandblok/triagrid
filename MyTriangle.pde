@@ -14,8 +14,9 @@ class MyTriangle extends MyElement {
     c = c_arg;
   }
   
-  String toString(){
-    return "MyTriangle p1 " + p1 + " ;p2 " + p2 + " ;p3 " + p3; 
+  @Override
+  public String toString(){
+    return "MyTriangle p1:" + p1 + " ;p2:" + p2 + " ;p3:" + p3; 
   }
 
   MyTriangle(MyPoint p1_arg, MyPoint p2_arg, MyPoint p3_arg, color c_arg) {
@@ -37,15 +38,16 @@ class MyTriangle extends MyElement {
     triangle(sp1.x, sp1.y, sp2.x, sp2.y, sp3.x, sp3.y);
   }
 
+  @Override
   public boolean equals(Object obj) {
-        if(obj instanceof MyTriangle) {
+        if(obj.getClass() == this.getClass()) {
           MyTriangle t_check = (MyTriangle) obj;
-          return (((p1 == t_check.p1) && (p2 == t_check.p2) && (p3 == t_check.p3)) ||
-            ((p1 == t_check.p1) && (p2 == t_check.p3) && (p3 == t_check.p2)) ||  
-            ((p1 == t_check.p2) && (p2 == t_check.p3) && (p3 == t_check.p1)) || 
-            ((p1 == t_check.p2) && (p2 == t_check.p1) && (p3 == t_check.p3)) || 
-            ((p1 == t_check.p3) && (p2 == t_check.p1) && (p3 == t_check.p2)) || 
-            ((p1 == t_check.p3) && (p2 == t_check.p2) && (p3 == t_check.p1))   );
+          return ((p1.equals(t_check.p1) && p2.equals(t_check.p2) && p3.equals(t_check.p3)) ||
+            (p1.equals(t_check.p1) && p2.equals(t_check.p3) && p3.equals(t_check.p2)) ||  
+            (p1.equals(t_check.p2) && p2.equals(t_check.p3) && p3.equals(t_check.p1)) || 
+            (p1.equals(t_check.p2) && p2.equals(t_check.p1) && p3.equals(t_check.p3)) || 
+            (p1.equals(t_check.p3) && p2.equals(t_check.p1) && p3.equals(t_check.p2)) || 
+            (p1.equals(t_check.p3) && p2.equals(t_check.p2) && p3.equals(t_check.p1))   );
           
         }
         return false;       
