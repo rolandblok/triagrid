@@ -30,6 +30,7 @@ class MyLine extends MyElement {
   }
   void draw(color c_arg) {
     stroke(c_arg);
+    strokeWeight(2);
     PVector sp1 = my_pitch.G2S(p1.p);
     PVector sp2 = my_pitch.G2S(p2.p);
     line(sp1.x, sp1.y, sp2.x, sp2.y);

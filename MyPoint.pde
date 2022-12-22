@@ -23,8 +23,9 @@ class MyPoint extends MyElement {
   
   void draw(color c_arg) {
      stroke(c_arg);
+     strokeWeight(1);
      PVector sp = getSP();
-     circle(sp.x, sp.y, 10);
+     circle(sp.x, sp.y, my_pitch.screen_scale/10);
   }
   void draw() {
     draw(c);

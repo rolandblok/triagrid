@@ -6,6 +6,7 @@ import java.util.*;
 //https://milchreis.github.io/uibooster-for-processing/reference/uibooster/UiBooster.html
 UiBooster booster;
 
+
 boolean draw_fill;
 boolean draw_lines;
 boolean draw_grid;
@@ -18,6 +19,7 @@ Vector<MyElement> drawables;
 
 MyElement closest_element = null;
 MyElement possible_new_element = null;
+color active_color = color(0);
 
 MyPitch my_pitch;
 
@@ -78,7 +80,7 @@ void draw() {
   }
 
   if (possible_new_element != null) {
-    possible_new_element.draw(color(0, 0, 255));
+    possible_new_element.draw();
   }
 }
 
@@ -87,13 +89,18 @@ void mouseMoved() {
 }
 
 void mousePressed() {
-
+    MyElement e = exists( drawables, possible_new_element) ;
+    if (e == null) {
+      drawables.add(possible_new_element);
+    } else {
+      drawables.remove(possible_new_element);
+    }
 }
 
 void keyPressed() {
   println("key : " + key);
   if ((key == DELETE) || (key == 'q')) {
-    MyElement check_elem = exists(possible_new_element);
+    MyElement check_elem = exists(drawables, possible_new_element);
     if (check_elem != null) {
       drawables.remove(check_elem);
     }
@@ -112,7 +119,7 @@ void keyPressed() {
       drawables_json.setJSONObject(i, e.getJSON());
       i++;
     }
-    saveJSONObject(main_json, filename);
+    saveJSONObject(main_json, filename);              
 
   } else if (key == 'l') {
     println("loading");
@@ -123,48 +130,46 @@ void keyPressed() {
     List json_list = Arrays.asList(json_array);
     
     String selected_file = booster.showSelectionDialog("select a file", "Select a File", json_list);
-    println ("selected : " + selected_file);
-    
-    drawables = new Vector<MyElement>();
-    JSONObject main_json = loadJSONObject( selected_file);
-    my_pitch = new MyPitch(main_json.getJSONObject("my_pitch"));
-    
-    JSONArray drawables_json = main_json.getJSONArray("drawables");
-    println("loading " + drawables_json.size() + " drawables");
-    for (int i = 0; i < drawables_json.size(); i++) {
-      JSONObject drawable_json = drawables_json.getJSONObject(i);
-      if (drawable_json.getString("type").equals(MyTriangle.my_type)) {
-        drawables.add(new MyTriangle(drawable_json));
-      } else if (drawable_json.getString("type").equals(MyLine.my_type)) {
-        drawables.add(new MyLine(drawable_json));
-      } else if (drawable_json.getString("type").equals(MyPoint.my_type)) {
-        drawables.add(new MyPoint(drawable_json));
-      } else {
+    if (selected_file != null) {
+      println ("selected : " + selected_file);
+      drawables = new Vector<MyElement>();
+      JSONObject main_json = loadJSONObject( selected_file);
+      my_pitch = new MyPitch(main_json.getJSONObject("my_pitch"));
+      
+      JSONArray drawables_json = main_json.getJSONArray("drawables");
+      println("loading " + drawables_json.size() + " drawables");
+      for (int i = 0; i < drawables_json.size(); i++) {
+        JSONObject drawable_json = drawables_json.getJSONObject(i);
+        if (drawable_json.getString("type").equals(MyTriangle.my_type)) {
+          drawables.add(new MyTriangle(drawable_json));
+        } else if (drawable_json.getString("type").equals(MyLine.my_type)) {
+          drawables.add(new MyLine(drawable_json));
+        } else if (drawable_json.getString("type").equals(MyPoint.my_type)) {
+          drawables.add(new MyPoint(drawable_json));
+        } 
       }
+      createGrid();
     }
-    createGrid();
     
   } else if (key == 'f') {
     if (MyTriangle.class == possible_new_element.getClass()) {
-      
-      floodfill((MyTriangle)possible_new_element);
+      println("add0");
+      floodFill((MyTriangle)possible_new_element);
     }
     
+  } else if (key == 'g') {
+    if (MyTriangle.class == possible_new_element.getClass()) {
+      println("remove");
+      floodClear((MyTriangle)possible_new_element);
+    }
     
   } else if ((key == '1') || (key == '2') || (key == '3')) {
-    println("add");
-    Enumeration<MyElement> drawa_enum = drawables.elements();
-    while (drawa_enum.hasMoreElements()) {
-      MyElement elem = drawa_enum.nextElement();
-      if (elem.equals(possible_new_element)) {
-        drawables.remove(elem);
-      } 
-    }
-    drawables.add(possible_new_element);
-    if (key == '2') {
-      possible_new_element.c = color(100,100,100);
+    if (key == '1') {
+      active_color = color(50,50,50);
+    } else if (key == '2') {
+      active_color = color(125,125,125);
     } else if (key == '3') {
-      possible_new_element.c = color(200,200,200);
+      active_color = color(200,200,200);
     }
   } else if (key == 'n') {
     createGrid();
@@ -175,7 +180,13 @@ void keyPressed() {
       draw_lines = !draw_lines;
   } else if (key == 'c') {
       draw_fill = !draw_fill;
-  }
+  } else if (key == '=') {
+      my_pitch.setScreenScale(1.1*my_pitch.screen_scale);
+  }  else if (key == '-') {
+      my_pitch.setScreenScale(0.9*my_pitch.screen_scale);
+  } 
+  
+  
 }
 
 MyElement closest (PVector p, boolean add) {
@@ -211,7 +222,7 @@ MyElement closest (PVector p, boolean add) {
   
   if (add) {
     
-    MyTriangle t = new MyTriangle(closest1, closest2, closest3);
+    MyTriangle t = new MyTriangle(closest1, closest2, closest3, active_color);
     float dist_t = t.distS(p);
     MyLine l = new MyLine(closest1, closest2);
     float dist_l = l.distS(p);    
@@ -226,29 +237,72 @@ MyElement closest (PVector p, boolean add) {
   return closest1;
 }
 
-void floodfill(MyTriangle t){
-  MyLine l1 = new MyLine(t.p1, t.p2);
-  MyElement e = exists(l1);
-  if (e != null) {
-    float avlx = (l1.p1.p.x + l1.p2.p.x)/2.0; 
-    float x     = 2*avlx - t.p3.p.x; 
-    
-  }
-  
-  MyLine l2 = new MyLine(t.p2, t.p3);
-  MyLine l3 = new MyLine(t.p3, t.p1);
-  
+void floodClear(MyTriangle t) {
+  drawables.remove(possible_new_element);
+  floodFill(t, 0, true);
 }
 
-MyElement exists(MyElement e) {
+void floodFill(MyTriangle t){
+  possible_new_element.c = active_color;
+  addElem(drawables, possible_new_element);
+
+  floodFill(t, 0, false);
+}
+
+void floodFill(MyTriangle t, int depth, boolean remove){
+  if (depth < 100) {
+    for (int side = 0; side < 3; side ++) {
+      int side2 = (side+1)%3;
+      int side3 = (side+2)%3;
+      MyLine l = new MyLine(t.ps[side], t.ps[side2]);
+      MyElement e = exists(drawables, l);
+      if (e == null) {
+        PVector av = PVector.add(t.ps[side].p, t.ps[side2].p).mult(0.5);
+        float x     = 2*av.x - t.ps[side3].p.x; 
+        float y     = 2*av.y - t.ps[side3].p.y;
+        if ((x >= 0) && ( y >= 0) && (x < X_GRID) && (Y < Y_GRID)){
+          MyTriangle tn = new MyTriangle(new MyPoint(x,y), t.ps[side], t.ps[side2], active_color);
+          MyElement et = exists(drawables, tn);
+          if (remove) {
+            if (et != null) {
+              drawables.remove(tn);
+              depth++;
+              floodFill(tn, depth, true);
+            } 
+          } else {
+            if (et == null) {
+              drawables.add(tn);
+              depth++;
+              floodFill(tn, depth, false);
+            } else if (et.c != tn.c) {
+              drawables.remove(et);
+              drawables.add(tn);
+              depth++;
+              floodFill(tn, depth, false);
+            }
+          }
+        }
+      }    
+    }
+  }
+
+}
+
+MyElement exists(Vector<MyElement> e_list, MyElement e) {
   MyElement exister = null;
-  Enumeration<MyElement> elem_enum = drawables.elements();
+  Enumeration<MyElement> elem_enum = e_list.elements();
   while (elem_enum.hasMoreElements()) {
      MyElement check_elem = elem_enum.nextElement();
      if (check_elem.equals(e)) {
-         drawables.remove(check_elem);
-         exister = e;
+         exister = check_elem;
      }
   }
   return exister;
+}
+void addElem(Vector<MyElement> e_list, MyElement e) {
+    MyElement check_elem = exists(e_list, e);
+    if (check_elem != null) {
+      e_list.remove(check_elem);
+    }
+    e_list.add(e);
 }
