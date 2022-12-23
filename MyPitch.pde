@@ -6,6 +6,7 @@ class MyPitch {
    float X_SCREEN_OFFSET;
    float screen_scale;
    
+   
      
    private void setScreenScale(float screen_scale_arg) {
      screen_scale = screen_scale_arg;
@@ -16,6 +17,7 @@ class MyPitch {
    MyPitch(float screen_scale_arg) {
      setScreenScale(screen_scale_arg);
    }
+   
    
    
    /**

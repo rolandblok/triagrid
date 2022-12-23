@@ -184,7 +184,12 @@ void keyPressed() {
       my_pitch.setScreenScale(1.1*my_pitch.screen_scale);
   }  else if (key == '-') {
       my_pitch.setScreenScale(0.9*my_pitch.screen_scale);
-  } 
+  } else if (key == 'p') {
+    MySvg svg = new MySvg(width, height);
+    svg.finalize();
+    
+    svg.save(sketchPath() + "/svg/roland.svg");
+  }
   
   
 }
