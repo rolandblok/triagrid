@@ -4,6 +4,8 @@ class MyTriangle extends MyElement {
   MyPoint[] ps;
   public static final String my_type =  "triangle"; 
   
+  Vector<MyLine> hatches ;
+  
   private void createMe(MyPoint p1_arg, MyPoint p2_arg, MyPoint p3_arg, color c_arg) {
     ps = new MyPoint[3];
         
@@ -14,6 +16,13 @@ class MyTriangle extends MyElement {
     p = new PVector((ps[0].p.x + ps[1].p.x + ps[2].p.x)/3, (ps[0].p.y + ps[1].p.y + ps[2].p.y)/3);
     
     c = c_arg;
+    hatches = new Vector<MyLine>();
+    for (float l = 0.2; l < 1; l += 0.2) {
+      PVector p1 = PVector.add(ps[0].p, PVector.mult(PVector.sub(ps[1].p, ps[0].p), l));             
+      PVector p2 = PVector.add(ps[0].p, PVector.mult(PVector.sub(ps[2].p, ps[0].p), l));   
+      MyLine hatch = new MyLine(new MyPoint(p1), new MyPoint(p2)); 
+      hatches.add(hatch);
+    }
 
   }
   
@@ -39,6 +48,11 @@ class MyTriangle extends MyElement {
     PVector sp2 = my_pitch.G2S(ps[1].p);
     PVector sp3 = my_pitch.G2S(ps[2].p);
     triangle(sp1.x, sp1.y, sp2.x, sp2.y, sp3.x, sp3.y);
+    
+    for (MyLine h : hatches) {
+      h.draw();
+    }
+    
   }
 
   @Override

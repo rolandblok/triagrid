@@ -2,15 +2,22 @@ import java.util.*;
 
 class MyPoint extends MyElement {
   public static final String my_type =  "point";
+  
       
-  private void createMe(float x_arg, float y_arg, color c_arg) {
+      
+  private void createMe(PVector p_arg, color c_arg) {
     c = c_arg;
-    p = new PVector(x_arg, y_arg);
-
+    p = p_arg.copy();
+  }
+  private void createMe(float x_arg, float y_arg, color c_arg) {
+    createMe(new PVector(x_arg, y_arg), c_arg);
+  }
+  MyPoint(PVector p_arg) {
+    createMe(p_arg, color(0,0,0));
   }
   
   MyPoint(float x_arg, float y_arg, color c_arg) {
-    createMe(x_arg,  y_arg,  c_arg);
+    createMe(new PVector(x_arg, y_arg),  c_arg);
   }
   MyPoint(float x_arg, float y_arg) {
     this(x_arg,  y_arg,  color(0,0,0));
