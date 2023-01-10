@@ -16,7 +16,7 @@ int X_GRID = 50;
 int Y_GRID = 50;
 Vector<MyPoint> grid;
 Vector<MyElement> drawables;
-Vector<MyLine> hatching;
+Vector<MyLine> hatches;
 
 MyElement closest_element = null;
 MyElement possible_new_element = null;
@@ -28,6 +28,7 @@ void createGrid() {
   println("createGrid");
   grid = new Vector<MyPoint>();
   my_pitch = new MyPitch(50);
+  
 
   for (int y = 0;  y < Y_GRID; y++) {
     float offset = 0;
@@ -45,7 +46,6 @@ void createGrid() {
 
 void setup() {
   size(1400, 1400);
-  
 
   draw_fill = true;
   draw_lines = true;
@@ -55,7 +55,15 @@ void setup() {
   drawables = new Vector<MyElement>();
 
   booster = new UiBooster();
-
+  
+  hatches = new Vector<MyLine>();
+  
+  //for (int iy = 0; iy < Y_GRID; iy ++) {
+  //  PVector p0 = new PVector(0,iy); 
+  //  PVector p1 = new PVector(width,iy); 
+  //  MyLine hatch = new MyLine(new MyPoint(p0), new MyPoint(p1));
+  //  hatches.add(hatch);
+  //}
 }
 
 void draw() {
@@ -74,6 +82,10 @@ void draw() {
     if ((e instanceof MyLine) && draw_lines) {
       e.draw();
     }
+  }
+  
+  for (MyLine l : hatches) {
+    l.draw();    
   }
 
   if (closest_element != null) {
@@ -194,6 +206,8 @@ void keyPressed() {
     String filename = sketchPath() + "/svg/roland.svg";
     println("saving to : "+filename); 
     svg.save(filename);
+  } else if (key == 'q') {
+    exit();
   }
   
   
