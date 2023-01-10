@@ -16,6 +16,7 @@ int X_GRID = 50;
 int Y_GRID = 50;
 Vector<MyPoint> grid;
 Vector<MyElement> drawables;
+Vector<MyLine> hatching;
 
 MyElement closest_element = null;
 MyElement possible_new_element = null;
@@ -185,10 +186,14 @@ void keyPressed() {
   }  else if (key == '-') {
       my_pitch.setScreenScale(0.9*my_pitch.screen_scale);
   } else if (key == 'p') {
-    MySvg svg = new MySvg(width, height);
-    svg.finalize();
+    MyPaths paths = new MyPaths(drawables);
     
-    svg.save(sketchPath() + "/svg/roland.svg");
+    MySvg svg = new MySvg(width, height);
+    paths.draw(svg);
+    svg.finalize();
+    String filename = sketchPath() + "/svg/roland.svg";
+    println("saving to : "+filename); 
+    svg.save(filename);
   }
   
   
