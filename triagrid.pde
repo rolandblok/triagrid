@@ -275,17 +275,23 @@ void floodFill(MyTriangle t){
 
 void floodFill(MyTriangle t, int depth, boolean remove){
   if (depth < 100) {
-    for (int side = 0; side < 3; side ++) {
-      int side2 = (side+1)%3;
-      int side3 = (side+2)%3;
-      MyLine l = new MyLine(t.ps[side], t.ps[side2]);
+    List<TSide> other_sides = Arrays.asList(TSide.values());
+    for (int side_in_1 = 0; side_in_1 < 3; side_in_1 ++) {
+      int side_in_2 = (side_in_1+1)%3;
+      int side_in_3 = (side_in_1+2)%3;
+      
+      TSide side = other_sides.get(side_in_1);
+      TSide side2 = other_sides.get(side_in_2);
+      TSide side3 = other_sides.get(side_in_3);
+      
+      MyLine l = new MyLine(t.ps.get(side), t.ps.get(side2));
       MyElement e = exists(drawables, l);
       if (e == null) {
-        PVector av = PVector.add(t.ps[side].p, t.ps[side2].p).mult(0.5);
-        float x     = 2*av.x - t.ps[side3].p.x; 
-        float y     = 2*av.y - t.ps[side3].p.y;
+        PVector av = PVector.add(t.ps.get(side).p, t.ps.get(side2).p).mult(0.5);
+        float x     = 2*av.x - t.ps.get(side3).p.x; 
+        float y     = 2*av.y - t.ps.get(side3).p.y;
         if ((x >= 0) && ( y >= 0) && (x < X_GRID) && (Y < Y_GRID)){
-          MyTriangle tn = new MyTriangle(new MyPoint(x,y), t.ps[side], t.ps[side2], active_color);
+          MyTriangle tn = new MyTriangle(new MyPoint(x,y), t.ps.get(side), t.ps.get(side2), active_color);
           MyElement et = exists(drawables, tn);
           if (remove) {
             if (et != null) {

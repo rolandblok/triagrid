@@ -1,25 +1,35 @@
 import java.util.*;
 
+enum TSide {
+  LEFT, MID, RIGHT
+}
+
 class MyTriangle extends MyElement {
-  MyPoint[] ps;
+  EnumMap<TSide,MyPoint> ps;
   public static final String my_type =  "triangle"; 
   
   Vector<MyLine> hatches ;
+
+
   
   private void createMe(MyPoint p1_arg, MyPoint p2_arg, MyPoint p3_arg, color c_arg) {
-    ps = new MyPoint[3];
+    ps = new EnumMap<>(TSide.class);
         
-    ps[0] = p1_arg;
-    ps[1] = p2_arg;
-    ps[2] = p3_arg;
-
-    p = new PVector((ps[0].p.x + ps[1].p.x + ps[2].p.x)/3, (ps[0].p.y + ps[1].p.y + ps[2].p.y)/3);
+    ps.put(TSide.LEFT, p1_arg);
+    ps.put(TSide.MID, p2_arg);
+    ps.put(TSide.RIGHT, p3_arg);
+        
+    PVector pl = ps.get(TSide.LEFT).p;
+    PVector pm = ps.get(TSide.MID).p;
+    PVector pr = ps.get(TSide.RIGHT).p;
+    
+    p = new PVector((pl.x + pm.x + pr.x)/3, (pl.y + pm.y + pr.y)/3);
     
     c = c_arg;
     hatches = new Vector<MyLine>();
     for (float l = 0.2; l < 1; l += 0.2) {
-      PVector p1 = PVector.add(ps[0].p, PVector.mult(PVector.sub(ps[1].p, ps[0].p), l));             
-      PVector p2 = PVector.add(ps[0].p, PVector.mult(PVector.sub(ps[2].p, ps[0].p), l));   
+      PVector p1 = PVector.add(pm, PVector.mult(PVector.sub(pl, pm), l));             
+      PVector p2 = PVector.add(pm, PVector.mult(PVector.sub(pr, pm), l));   
       MyLine hatch = new MyLine(new MyPoint(p1), new MyPoint(p2)); 
       hatches.add(hatch);
     }
@@ -28,7 +38,7 @@ class MyTriangle extends MyElement {
   
   @Override
   public String toString(){
-    return "MyTriangle p1:" + ps[0] + " ;p2:" + ps[1] + " ;p3:" + ps[2]; 
+    return "MyTriangle pl:" + ps.get(TSide.LEFT).p + " ;pm:" + ps.get(TSide.MID).p + " ;pr:" +ps.get(TSide.RIGHT).p; 
   }
 
   MyTriangle(MyPoint p1_arg, MyPoint p2_arg, MyPoint p3_arg, color c_arg) {
@@ -44,9 +54,9 @@ class MyTriangle extends MyElement {
   void draw(color c_arg) {
     fill(c_arg);
     noStroke();
-    PVector sp1 = my_pitch.G2S(ps[0].p);
-    PVector sp2 = my_pitch.G2S(ps[1].p);
-    PVector sp3 = my_pitch.G2S(ps[2].p);
+    PVector sp1 = my_pitch.G2S(ps.get(TSide.LEFT).p);
+    PVector sp2 = my_pitch.G2S(ps.get(TSide.MID).p);
+    PVector sp3 = my_pitch.G2S(ps.get(TSide.RIGHT).p);
     triangle(sp1.x, sp1.y, sp2.x, sp2.y, sp3.x, sp3.y);
     
     for (MyLine h : hatches) {
@@ -60,12 +70,12 @@ class MyTriangle extends MyElement {
         if(obj.getClass() == this.getClass()) {
           MyTriangle t_check = (MyTriangle) obj;
           return 
-            ((ps[0].equals(t_check.ps[0]) && ps[1].equals(t_check.ps[1]) && ps[2].equals(t_check.ps[2])) ||
-             (ps[0].equals(t_check.ps[0]) && ps[1].equals(t_check.ps[2]) && ps[2].equals(t_check.ps[1])) ||  
-             (ps[0].equals(t_check.ps[1]) && ps[1].equals(t_check.ps[2]) && ps[2].equals(t_check.ps[0])) || 
-             (ps[0].equals(t_check.ps[1]) && ps[1].equals(t_check.ps[0]) && ps[2].equals(t_check.ps[2])) || 
-             (ps[0].equals(t_check.ps[2]) && ps[1].equals(t_check.ps[0]) && ps[2].equals(t_check.ps[1])) || 
-             (ps[0].equals(t_check.ps[2]) && ps[1].equals(t_check.ps[1]) && ps[2].equals(t_check.ps[0]))   );
+            ((ps.get(TSide.LEFT).equals(t_check.ps.get(TSide.LEFT)) && ps.get(TSide.MID).equals(t_check.ps.get(TSide.MID)) && ps.get(TSide.RIGHT).equals(t_check.ps.get(TSide.RIGHT))) ||
+             (ps.get(TSide.LEFT).equals(t_check.ps.get(TSide.LEFT)) && ps.get(TSide.MID).equals(t_check.ps.get(TSide.RIGHT)) && ps.get(TSide.RIGHT).equals(t_check.ps.get(TSide.MID))) ||  
+             (ps.get(TSide.LEFT).equals(t_check.ps.get(TSide.MID)) && ps.get(TSide.MID).equals(t_check.ps.get(TSide.RIGHT)) && ps.get(TSide.RIGHT).equals(t_check.ps.get(TSide.LEFT))) || 
+             (ps.get(TSide.LEFT).equals(t_check.ps.get(TSide.MID)) && ps.get(TSide.MID).equals(t_check.ps.get(TSide.LEFT)) && ps.get(TSide.RIGHT).equals(t_check.ps.get(TSide.RIGHT))) || 
+             (ps.get(TSide.LEFT).equals(t_check.ps.get(TSide.RIGHT)) && ps.get(TSide.MID).equals(t_check.ps.get(TSide.LEFT)) && ps.get(TSide.RIGHT).equals(t_check.ps.get(TSide.MID))) || 
+             (ps.get(TSide.LEFT).equals(t_check.ps.get(TSide.RIGHT)) && ps.get(TSide.MID).equals(t_check.ps.get(TSide.MID)) && ps.get(TSide.RIGHT).equals(t_check.ps.get(TSide.LEFT)))   );
           
         }
         return false;       
@@ -74,9 +84,9 @@ class MyTriangle extends MyElement {
   JSONObject getJSON(){
     JSONObject json = new JSONObject();
     json.setString("type", my_type);
-    json.setJSONObject("p1", ps[0].getJSON());
-    json.setJSONObject("p2", ps[1].getJSON());
-    json.setJSONObject("p3", ps[2].getJSON());
+    json.setJSONObject("p1", ps.get(TSide.LEFT).getJSON());
+    json.setJSONObject("p2", ps.get(TSide.MID).getJSON());
+    json.setJSONObject("p3", ps.get(TSide.RIGHT).getJSON());
     json.setInt("color", c);
     
     return json;
