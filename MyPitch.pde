@@ -1,21 +1,20 @@
 class MyPitch {
+   PVector SCREEN_PITCH;
    float X_GROUND_PITCH = 1.00; 
    float Y_GROUND_PITCH = 0.87;
-   float X_SCREEN_PITCH;
-   float Y_SCREEN_PITCH;
-   float X_SCREEN_OFFSET;
    float screen_scale;
    
    
      
-   private void setScreenScale(float screen_scale_arg) {
-     screen_scale = screen_scale_arg;
-     X_SCREEN_PITCH = X_GROUND_PITCH * screen_scale;
-     Y_SCREEN_PITCH = Y_GROUND_PITCH * screen_scale;
+   void recalc_grid() {
+     SCREEN_PITCH = new PVector(0,0); 
+     SCREEN_PITCH.x = X_GROUND_PITCH * screen_scale;
+     SCREEN_PITCH.y = Y_GROUND_PITCH * screen_scale;
    }
 
    MyPitch(float screen_scale_arg) {
-     setScreenScale(screen_scale_arg);
+     screen_scale = screen_scale_arg;
+     recalc_grid();
    }
    
    
@@ -23,11 +22,18 @@ class MyPitch {
    /**
     * Grid coordinate to screen coordinate
     */
-   PVector G2S(PVector pg) { 
-     return PVector.mult(pg, screen_scale);
+   PVector G2S(PVector pg) {
+     PVector res = pg.copy();
+     res.x = SCREEN_PITCH.x * res.x;
+     res.y = SCREEN_PITCH.y * res.y;
+     return res;
    }
    PVector S2G(PVector pg) { 
-     return PVector.div(pg, screen_scale);
+     PVector res = pg.copy();
+     res.x = res.x / SCREEN_PITCH.x;
+     res.y = res.y / SCREEN_PITCH.y;
+     return res;
+
    }
   
   JSONObject getJSON(){
@@ -42,8 +48,8 @@ class MyPitch {
     if (json.getString("type").equals("MyPitch")) {
       
       float _screen_scale = json.getFloat("screen_scale");
-      
-      setScreenScale(_screen_scale);
+      screen_scale =_screen_scale;
+      recalc_grid();
     }
   }
   

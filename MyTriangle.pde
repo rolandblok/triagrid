@@ -9,28 +9,63 @@ class MyTriangle extends MyElement {
   public static final String my_type =  "triangle"; 
   
   Vector<MyLine> hatches ;
-
-
+  int hatch_density;
   
   private void createMe(MyPoint p1_arg, MyPoint p2_arg, MyPoint p3_arg, color c_arg) {
     ps = new EnumMap<>(TSide.class);
-        
-    ps.put(TSide.LEFT, p1_arg);
-    ps.put(TSide.MID, p2_arg);
-    ps.put(TSide.RIGHT, p3_arg);
-        
-    PVector pl = ps.get(TSide.LEFT).p;
-    PVector pm = ps.get(TSide.MID).p;
-    PVector pr = ps.get(TSide.RIGHT).p;
     
-    p = new PVector((pl.x + pm.x + pr.x)/3, (pl.y + pm.y + pr.y)/3);
+    ArrayList<MyPoint> sort_list = new ArrayList<MyPoint>();
+    sort_list.add(p1_arg);
+    sort_list.add(p2_arg);
+    sort_list.add(p3_arg);
     
+    Collections.sort(sort_list, (MyPoint p1, MyPoint p2) -> Float.compare(p1.p.x, p2.p.x));
+    
+    ps.put(TSide.LEFT, sort_list.get(0));
+    ps.put(TSide.MID, sort_list.get(1));
+    ps.put(TSide.RIGHT, sort_list.get(2));
+    
+    hatch_density = 5;
+    PVector p0 = ps.get(TSide.MID).p;
+    PVector p1 = ps.get(TSide.LEFT).p;
+    PVector p2 = ps.get(TSide.RIGHT).p;  
+
+    if (green(c_arg) < 255/3) {    
+      hatch_density = 7;
+      if (ps.get(TSide.LEFT).p.y < ps.get(TSide.MID).p.y) {
+        p0 = ps.get(TSide.LEFT).p;
+        p1 = ps.get(TSide.MID).p;
+        p2 = ps.get(TSide.RIGHT).p;
+      } else {
+        p0 = ps.get(TSide.RIGHT).p;
+        p1 = ps.get(TSide.MID).p;
+        p2 = ps.get(TSide.LEFT).p;        
+      }
+    } else if (green(c_arg) < 2*255/3) {
+      hatch_density = 9;
+      if (ps.get(TSide.LEFT).p.y < ps.get(TSide.MID).p.y) {
+        p0 = ps.get(TSide.RIGHT).p;
+        p1 = ps.get(TSide.MID).p;
+        p2 = ps.get(TSide.LEFT).p;
+      } else {
+        p0 = ps.get(TSide.LEFT).p;
+        p1 = ps.get(TSide.MID).p;
+        p2 = ps.get(TSide.RIGHT).p;        
+      }    
+    } 
+    
+    p = new PVector((p0.x + p1.x + p2.x)/3, (p0.y + p1.y + p2.y)/3);
+
     c = c_arg;
     hatches = new Vector<MyLine>();
-    for (float l = 0.2; l < 1; l += 0.2) {
-      PVector p1 = PVector.add(pm, PVector.mult(PVector.sub(pl, pm), l));             
-      PVector p2 = PVector.add(pm, PVector.mult(PVector.sub(pr, pm), l));   
-      MyLine hatch = new MyLine(new MyPoint(p1), new MyPoint(p2)); 
+    for (int i = 1; i <= hatch_density; i++) {
+      float l = i * 1.0 / hatch_density;
+      
+      PVector pa= PVector.lerp(p0, p1, l);
+      PVector pb= PVector.lerp(p0, p2, l);
+      //PVector pa = PVector.add(p0, PVector.mult(PVector.sub(p1, p0), l));             
+      //PVector pb = PVector.add(p0, PVector.mult(PVector.sub(p2, p0), l));   
+      MyLine hatch = new MyLine(new MyPoint(pa), new MyPoint(pb)); 
       hatches.add(hatch);
     }
 
@@ -57,7 +92,7 @@ class MyTriangle extends MyElement {
     PVector sp1 = my_pitch.G2S(ps.get(TSide.LEFT).p);
     PVector sp2 = my_pitch.G2S(ps.get(TSide.MID).p);
     PVector sp3 = my_pitch.G2S(ps.get(TSide.RIGHT).p);
-    triangle(sp1.x, sp1.y, sp2.x, sp2.y, sp3.x, sp3.y);
+    //triangle(sp1.x, sp1.y, sp2.x, sp2.y, sp3.x, sp3.y);
     
     for (MyLine h : hatches) {
       h.draw();

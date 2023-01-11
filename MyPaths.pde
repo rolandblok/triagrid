@@ -17,11 +17,17 @@ class MyPaths {
       for (MyElement elem : elements) {
         if (elem.getClass() ==   MyLine.class) {
           visible_lines.add((MyLine) elem);          
+        } else if (elem.getClass() ==   MyTriangle.class) {
+          MyTriangle t = (MyTriangle) elem;
+          for (MyLine l : t.hatches) {
+            visible_lines.add(l);
+          }
         }
       }
+      //println(visible_lines);
   
       //Find length 0 lines, kill em.
-      print("Culling zero length lines : from " + visible_lines.size() + " -. ");
+      print("Culling zero length lines : from " + visible_lines.size() + " -> ");
       Iterator<MyLine> zero_line_it = visible_lines.iterator();
       while (zero_line_it.hasNext()) {
           MyLine line_it = zero_line_it.next();
@@ -36,12 +42,12 @@ class MyPaths {
       removeDoubleLines(visible_lines);
       println(" Culling double lines to " + visible_lines.size() );
   
-      boolean no_more_connections_found = true;
+      boolean no_connections_found = true;
       while (visible_lines.size() > 0) {
         // create a line list and put it to the path list
           
           LinkedList<PVector> point_path;
-          if (no_more_connections_found) {
+          if (no_connections_found) {
             point_path = new LinkedList<PVector>();
             paths_list.addLast(point_path); 
             MyLine check_line = visible_lines.poll();
@@ -50,7 +56,7 @@ class MyPaths {
             visible_lines.remove(check_line);         // remove it from the list, and go for the next one
           }    else {
             point_path = paths_list.getLast();
-            no_more_connections_found = true;
+            no_connections_found = true;
           }
  
           Iterator<MyLine> line_it = visible_lines.iterator();
@@ -65,7 +71,7 @@ class MyPaths {
                   // start connects to left (0) of iterated line
                   point_path.addFirst(check_line.ps[1].p);
                   visible_lines.remove(check_line);
-                  no_more_connections_found = false;
+                  no_connections_found = false;
                   break;
               }
               else if (fEQ(start.x, check_line.ps[1].p.x, ACC) &&
@@ -73,7 +79,7 @@ class MyPaths {
                   // start connects to right of iterated line
                   point_path.addFirst(check_line.ps[0].p);
                   visible_lines.remove(check_line);
-                  no_more_connections_found = false;
+                  no_connections_found = false;
                   break;
               }
               else if (fEQ(end.x, check_line.ps[0].p.x, ACC) &&
@@ -81,7 +87,7 @@ class MyPaths {
                   // start connects to left of iterated line
                   point_path.addLast( check_line.ps[1].p);
                   visible_lines.remove(check_line);
-                  no_more_connections_found = false;
+                  no_connections_found = false;
                   break;
               }
               else if (fEQ(end.x, check_line.ps[1].p.x, ACC) &&
@@ -89,7 +95,7 @@ class MyPaths {
                   // start connects to right of iterated line
                   point_path.addLast(check_line.ps[0].p);
                   visible_lines.remove(check_line);
-                  no_more_connections_found = false;
+                  no_connections_found = false;
                   break;
               }
           
@@ -105,12 +111,18 @@ class MyPaths {
   int removeDoubleLines(LinkedList<MyLine> visible_lines)
   {
     int no_lines_start = visible_lines.size();
-    for(ListIterator<MyLine> outer = visible_lines.listIterator(); outer.hasNext() ; ) {
-      MyLine line_outer = outer.next();
-      for(ListIterator<MyLine> inner = visible_lines.listIterator(outer.nextIndex()); inner.hasNext(); ) {
-        MyLine line_inner = inner.next();
+    ListIterator<MyLine> outer_it = visible_lines.listIterator();
+    while (outer_it.hasNext()) {
+    //for(ListIterator<MyLine> outer = visible_lines.listIterator(); outer.hasNext() ; ) {
+      MyLine line_outer = outer_it.next();
+      ListIterator<MyLine> inner_it = visible_lines.listIterator(outer_it.nextIndex());
+      //for(ListIterator<MyLine> inner = visible_lines.listIterator(outer.nextIndex()); inner.hasNext(); ) {
+      while (inner_it.hasNext()) {  
+        MyLine line_inner = inner_it.next();
          if (line_inner.equals(line_outer)) {
-            visible_lines.remove(line_outer);
+            outer_it.remove();
+
+            
             //cout << ".";
             break;
          }

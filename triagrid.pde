@@ -16,10 +16,10 @@ int X_GRID = 50;
 int Y_GRID = 50;
 Vector<MyPoint> grid;
 Vector<MyElement> drawables;
-Vector<MyLine> hatches;
 
 MyElement closest_element = null;
 MyElement possible_new_element = null;
+boolean triangle_fill_mode_on = false;
 color active_color = color(0);
 
 MyPitch my_pitch;
@@ -56,14 +56,6 @@ void setup() {
 
   booster = new UiBooster();
   
-  hatches = new Vector<MyLine>();
-  
-  //for (int iy = 0; iy < Y_GRID; iy ++) {
-  //  PVector p0 = new PVector(0,iy); 
-  //  PVector p1 = new PVector(width,iy); 
-  //  MyLine hatch = new MyLine(new MyPoint(p0), new MyPoint(p1));
-  //  hatches.add(hatch);
-  //}
 }
 
 void draw() {
@@ -84,10 +76,6 @@ void draw() {
     }
   }
   
-  for (MyLine l : hatches) {
-    l.draw();    
-  }
-
   if (closest_element != null) {
       closest_element.draw(color(0, 255, 0));
   }
@@ -194,9 +182,19 @@ void keyPressed() {
   } else if (key == 'c') {
       draw_fill = !draw_fill;
   } else if (key == '=') {
-      my_pitch.setScreenScale(1.1*my_pitch.screen_scale);
-  }  else if (key == '-') {
-      my_pitch.setScreenScale(0.9*my_pitch.screen_scale);
+      my_pitch.screen_scale = 1.1*my_pitch.screen_scale;
+      my_pitch.recalc_grid();
+  } else if (key == '-') {
+      my_pitch.screen_scale = 0.9*my_pitch.screen_scale;
+      my_pitch.recalc_grid();
+  } else if (key == '[') {
+      my_pitch.Y_GROUND_PITCH = 0.9*my_pitch.Y_GROUND_PITCH;
+      my_pitch.recalc_grid();
+  }  else if (key == ']') {
+      my_pitch.Y_GROUND_PITCH = 1.1*my_pitch.Y_GROUND_PITCH;
+      my_pitch.recalc_grid();
+  } else if (key == 't') {
+      triangle_fill_mode_on = !triangle_fill_mode_on;
   } else if (key == 'p') {
     MyPaths paths = new MyPaths(drawables);
     
@@ -250,10 +248,9 @@ MyElement closest (PVector p, boolean add) {
     float dist_t = t.distS(p);
     MyLine l = new MyLine(closest1, closest2);
     float dist_l = l.distS(p);    
-    if (dist_t < dist_l) {
+    possible_new_element = l; 
+    if ((dist_t < dist_l) && triangle_fill_mode_on) {
       possible_new_element = t;
-    } else {
-      possible_new_element = l; 
     }
 
   }
