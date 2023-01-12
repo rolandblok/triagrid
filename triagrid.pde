@@ -1,6 +1,9 @@
+
 import uibooster.*;
 
 import java.util.*;
+import java.nio.file.Path;
+import java.nio.file.Paths;
  
 
 //https://milchreis.github.io/uibooster-for-processing/reference/uibooster/UiBooster.html
@@ -17,7 +20,9 @@ int Y_GRID = 50;
 Vector<MyPoint> grid;
 Vector<MyElement> drawables;
 
-MyElement closest_element = null;
+String plot_name = "roland";
+
+MyPoint closest_point = null;
 MyElement possible_new_element = null;
 boolean triangle_fill_mode_on = false;
 color active_color = color(0);
@@ -76,25 +81,39 @@ void draw() {
     }
   }
   
-  if (closest_element != null) {
-      closest_element.draw(color(0, 255, 0));
+  if (closest_point != null) {
+      closest_point.draw(color(0, 255, 0), 1);
   }
 
   if (possible_new_element != null) {
-    possible_new_element.draw();
+    possible_new_element.draw(color(200,0, 0), 0.5);
   }
 }
 
 void mouseMoved() {
-  closest_element = closest(new PVector(mouseX, mouseY), true);
+  PVector mouse_p = new PVector(mouseX, mouseY);
+  closest_point = closest(my_pitch.S2G(mouse_p), true);
 }
 
 void mousePressed() {
+  if (mouseButton == LEFT) {
     MyElement e = exists( drawables, possible_new_element) ;
     if (e == null) {
       drawables.add(possible_new_element);
-    } else {
+    }
+  } else if (mouseButton == RIGHT) {
+    MyElement e = exists( drawables, possible_new_element) ;
+    if (e != null) {
       drawables.remove(possible_new_element);
+    }
+  } 
+}
+private void add_rem_elem(MyElement element) {
+    MyElement e = exists( drawables, element) ;
+    if (e == null) {
+      drawables.add(element);
+    } else {
+      drawables.remove(element);
     }
 }
 
@@ -108,8 +127,12 @@ void keyPressed() {
 
   } else if (key == 's') {
     println("save json");
-    String filename = booster.showTextInputDialog("Filename");
-    filename = "data/" + filename + ".json";
+    String select_name = booster.showTextInputDialog("Filename");
+    if (!select_name.equals("")) {
+      plot_name = select_name;
+    }
+    surface.setTitle(plot_name);
+    String filename = "data/" + plot_name + ".json";
 
     JSONObject main_json = new JSONObject();
     main_json.setJSONObject("my_pitch", my_pitch.getJSON());
@@ -132,9 +155,15 @@ void keyPressed() {
     
     String selected_file = booster.showSelectionDialog("select a file", "Select a File", json_list);
     if (selected_file != null) {
-      println ("selected : " + selected_file);
+      plot_name = Paths.get(selected_file).getFileName().toString();
+      int lastPeriodPos = plot_name.lastIndexOf('.');
+      if (lastPeriodPos > 0) {
+        plot_name = plot_name.substring(0, lastPeriodPos);
+      }
+      println ("selected : " + selected_file +" --> plotname " + plot_name);
+      surface.setTitle(plot_name);
       drawables = new Vector<MyElement>();
-      JSONObject main_json = loadJSONObject( selected_file);
+      JSONObject main_json = loadJSONObject(selected_file);
       my_pitch = new MyPitch(main_json.getJSONObject("my_pitch"));
       
       JSONArray drawables_json = main_json.getJSONArray("drawables");
@@ -164,7 +193,7 @@ void keyPressed() {
       floodClear((MyTriangle)possible_new_element);
     }
     
-  } else if ((key == '1') || (key == '2') || (key == '3')) {
+  } else if ((triangle_fill_mode_on) && ((key == '1') || (key == '2') || (key == '3'))) {
     if (key == '1') {
       active_color = color(50,50,50);
     } else if (key == '2') {
@@ -172,6 +201,42 @@ void keyPressed() {
     } else if (key == '3') {
       active_color = color(200,200,200);
     }
+  } else if (!triangle_fill_mode_on && (key == '1')) {
+    MyPoint np = new MyPoint(closest_point.p.x-0.5, closest_point.p.y+1.0);
+    MyLine l = new MyLine(closest_point, np);
+    add_rem_elem(l);
+    closest_point = closest(np.p, false);
+    
+  } else if (!triangle_fill_mode_on && (key == '3')) {
+    MyPoint np = new MyPoint(closest_point.p.x+0.5, closest_point.p.y+1.0);
+    MyLine l = new MyLine(closest_point, np);
+    add_rem_elem(l);
+    closest_point = closest(np.p, false);
+    
+  } else if (!triangle_fill_mode_on && (key == '6')) {
+    MyPoint np = new MyPoint(closest_point.p.x+1.0, closest_point.p.y);
+    MyLine l = new MyLine(closest_point, np);
+    add_rem_elem(l);
+    closest_point = closest(np.p, false);
+    
+  } else if (!triangle_fill_mode_on && (key == '9')) {
+    MyPoint np = new MyPoint(closest_point.p.x+0.5, closest_point.p.y-1.0);
+    MyLine l = new MyLine(closest_point, np);
+    add_rem_elem(l);
+    closest_point = closest(np.p, false);
+    
+  } else if (!triangle_fill_mode_on && (key == '7')) {
+    MyPoint np = new MyPoint(closest_point.p.x-0.5, closest_point.p.y-1.0);
+    MyLine l = new MyLine(closest_point, np);
+    add_rem_elem(l);
+    closest_point = closest(np.p, false);
+    
+  } else if (!triangle_fill_mode_on && (key == '4')) {
+    MyPoint np = new MyPoint(closest_point.p.x-1.0, closest_point.p.y);
+    MyLine l = new MyLine(closest_point, np);
+    add_rem_elem(l);
+    closest_point = closest(np.p, false);
+    
   } else if (key == 'n') {
     createGrid();
     drawables = new Vector<MyElement>();
@@ -201,29 +266,28 @@ void keyPressed() {
     MySvg svg = new MySvg(width, height);
     paths.draw(svg);
     svg.finalize();
-    String filename = sketchPath() + "/svg/roland.svg";
+    String filename = sketchPath() + "/svg/" + plot_name + ".svg";
     println("saving to : "+filename); 
     svg.save(filename);
   } else if (key == 'q') {
     exit();
   }
   
-  
 }
 
-MyElement closest (PVector p, boolean add) {
+MyPoint closest (PVector grid_p, boolean add) {
   
   Enumeration<MyPoint> elem_enum = grid.elements();
   MyPoint closest1 = elem_enum.nextElement();
   MyPoint closest2 = elem_enum.nextElement();
   MyPoint closest3 = elem_enum.nextElement();
-  float dist1 = closest1.distS(p);
-  float dist2 = closest2.distS(p);
-  float dist3 = closest3.distS(p);
-
+  float dist1 = closest1.distG(grid_p);
+  float dist2 = closest2.distG(grid_p);
+  float dist3 = closest3.distG(grid_p);
+  // find the 3 closest points
   while (elem_enum.hasMoreElements()) {
     MyPoint closest_check = elem_enum.nextElement();
-    float dist_check = closest_check.distS(p);
+    float dist_check = closest_check.distG(grid_p);
     if (dist_check < dist1) {
       closest3 = closest2;
       closest2 = closest1;
@@ -241,16 +305,19 @@ MyElement closest (PVector p, boolean add) {
       dist3 = dist_check;
     }
   }
+
   
+  // adapt possible new element with closest line or triangle (if triangle mode is on);
   if (add) {
-    
     MyTriangle t = new MyTriangle(closest1, closest2, closest3, active_color);
-    float dist_t = t.distS(p);
+    float dist_t = t.distG(grid_p);
     MyLine l = new MyLine(closest1, closest2);
-    float dist_l = l.distS(p);    
+    float dist_l = l.distG(grid_p);    
     possible_new_element = l; 
-    if ((dist_t < dist_l) && triangle_fill_mode_on) {
+    if (triangle_fill_mode_on) {
       possible_new_element = t;
+    } else {
+      possible_new_element = l;
     }
 
   }

@@ -4,15 +4,18 @@ abstract class  MyElement{
   public static final String my_type =  "element"; 
     
   public abstract void draw();
-  public abstract void draw(color c);
+  public abstract void draw(color c, float weight);
   public abstract JSONObject getJSON();
   
   public PVector getSP(){
     return( my_pitch.G2S(p));
   }
-  public float distS(PVector p_arg) {
-    PVector sp = getSP();
-    return p_arg.dist(sp);
+  //public float distS(PVector scr_p_arg) {
+  //  PVector sp = getSP();
+  //  return scr_p_arg.dist(sp);
+  //}
+  public float distG(PVector grid_p_arg) {
+    return grid_p_arg.dist(p);
   }
 
   

@@ -84,11 +84,15 @@ class MyTriangle extends MyElement {
   }
 
   void draw() {
-    draw(c);
+    draw(c, 0);
   }
-  void draw(color c_arg) {
+  void draw(color c_arg, float weight) {
     fill(c_arg);
-    noStroke();
+    if (weight == 0) {
+      noStroke();
+    } else {
+      stroke(weight);
+    }
     PVector sp1 = my_pitch.G2S(ps.get(TSide.LEFT).p);
     PVector sp2 = my_pitch.G2S(ps.get(TSide.MID).p);
     PVector sp3 = my_pitch.G2S(ps.get(TSide.RIGHT).p);

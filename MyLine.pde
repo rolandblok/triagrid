@@ -26,11 +26,11 @@ class MyLine extends MyElement {
   }
 
   void draw() {
-    draw(c);
+    draw(c, 1);
   }
-  void draw(color c_arg) {
+  void draw(color c_arg, float weight) {
     stroke(c_arg);
-    strokeWeight(2);
+    strokeWeight(weight);
     PVector sp1 = my_pitch.G2S(ps[0].p);
     PVector sp2 = my_pitch.G2S(ps[1].p);
     line(sp1.x, sp1.y, sp2.x, sp2.y);

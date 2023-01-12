@@ -28,14 +28,14 @@ class MyPoint extends MyElement {
     return "MyPoint p" + p; 
   }
   
-  void draw(color c_arg) {
+  void draw() {
+    draw(c, 1);
+  }
+  void draw(color c_arg, float weight) {
      stroke(c_arg);
-     strokeWeight(1);
+     strokeWeight(weight);
      PVector sp = getSP();
      circle(sp.x, sp.y, my_pitch.screen_scale/10);
-  }
-  void draw() {
-    draw(c);
   }
 
   @Override
