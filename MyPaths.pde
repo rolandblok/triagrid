@@ -42,12 +42,12 @@ class MyPaths {
       removeDoubleLines(visible_lines);
       println(" Culling double lines to " + visible_lines.size() );
   
-      boolean no_connections_found = true;
+      boolean connections_found = false;
       while (visible_lines.size() > 0) {
         // create a line list and put it to the path list
           
           LinkedList<PVector> point_path;
-          if (no_connections_found) {
+          if (!connections_found) {
             point_path = new LinkedList<PVector>();
             paths_list.addLast(point_path); 
             MyLine check_line = visible_lines.poll();
@@ -56,10 +56,12 @@ class MyPaths {
             visible_lines.remove(check_line);         // remove it from the list, and go for the next one
           }    else {
             point_path = paths_list.getLast();
-            no_connections_found = true;
+            connections_found = false;
           }
  
           Iterator<MyLine> line_it = visible_lines.iterator();
+          LinkedList<MyLine> connecting_end_lines = new LinkedList<MyLine>();
+          LinkedList<MyLine> connecting_front_lines = new LinkedList<MyLine>();
           while (line_it.hasNext()) {
               MyLine check_line = line_it.next();
               // see if the next line connects to the start or end.
@@ -69,37 +71,61 @@ class MyPaths {
               if (fEQ(start.x, check_line.ps[0].p.x, ACC) &&
                   fEQ(start.y, check_line.ps[0].p.y, ACC)) {
                   // start connects to left (0) of iterated line
-                  point_path.addFirst(check_line.ps[1].p);
-                  visible_lines.remove(check_line);
-                  no_connections_found = false;
-                  break;
+                  connecting_front_lines.add(check_line);
+                  check_line.reverse();
               }
               else if (fEQ(start.x, check_line.ps[1].p.x, ACC) &&
                   fEQ(start.y, check_line.ps[1].p.y, ACC)) {
                   // start connects to right of iterated line
-                  point_path.addFirst(check_line.ps[0].p);
-                  visible_lines.remove(check_line);
-                  no_connections_found = false;
-                  break;
+                  connecting_front_lines.add(check_line);
               }
               else if (fEQ(end.x, check_line.ps[0].p.x, ACC) &&
                   fEQ(end.y, check_line.ps[0].p.y, ACC)) {
                   // start connects to left of iterated line
-                  point_path.addLast( check_line.ps[1].p);
-                  visible_lines.remove(check_line);
-                  no_connections_found = false;
-                  break;
+                  connecting_end_lines.add(check_line);
               }
               else if (fEQ(end.x, check_line.ps[1].p.x, ACC) &&
                   fEQ(end.y, check_line.ps[1].p.y, ACC)) {
                   // start connects to right of iterated line
-                  point_path.addLast(check_line.ps[0].p);
-                  visible_lines.remove(check_line);
-                  no_connections_found = false;
-                  break;
+                  connecting_end_lines.add(check_line);
+                  check_line.reverse();
               }
-          
+        }
+            
+        // add line to path : prefer the straight continue.
+        if (connecting_end_lines.size() > 0) {
+          Iterator<MyLine> con_end_lines_it = connecting_end_lines.iterator();
+          MyLine best_end_line = con_end_lines_it.next();
+          float best_dot = best_end_line.direction().dot(getPathEndDir(point_path));
+          while(con_end_lines_it.hasNext()) {
+            MyLine cur_end_line = con_end_lines_it.next();
+            float cur_dot = cur_end_line.direction().dot(getPathEndDir(point_path));
+            if (cur_dot > best_dot) {
+              best_dot = cur_dot; 
+              best_end_line = cur_end_line;
+            }
           }
+          point_path.addLast(best_end_line.ps[1].p);
+          visible_lines.remove(best_end_line);
+          connections_found = true;
+        }
+        if (connecting_front_lines.size() > 0) {
+          Iterator<MyLine> con_front_lines_it = connecting_front_lines.iterator();
+          MyLine best_front_line = con_front_lines_it.next();
+          float best_dot = best_front_line.direction().dot(getPathFrontDir(point_path));
+          while(con_front_lines_it.hasNext()) {
+            MyLine cur_front_line = con_front_lines_it.next();
+            float cur_dot = cur_front_line.direction().dot(getPathFrontDir(point_path));
+            if (cur_dot > best_dot) {
+              best_dot = cur_dot; 
+              best_front_line = cur_front_line;
+            }
+          }
+          point_path.addFirst(best_front_line.ps[0].p);
+          visible_lines.remove(best_front_line);
+          connections_found = true;
+        }
+          
       }
       println(" number of paths " + getNoPaths() );
   
@@ -178,6 +204,20 @@ class MyPaths {
          no_lines += path.size()-1;
       }
       return no_lines;
+  }
+  PVector getPathEndDir(LinkedList<PVector> path) {
+    if (path.size() < 2) {
+      return null;
+    } else {
+      return PVector.sub(path.getLast(), path.get(path.size()-2));
+    }
+  }
+  PVector getPathFrontDir(LinkedList<PVector> path) {
+    if (path.size() < 2) {
+      return null;
+    } else {
+      return PVector.sub(path.get(0), path.get(1));
+    }
   }
       
 }

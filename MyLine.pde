@@ -25,6 +25,15 @@ class MyLine extends MyElement {
     return "MyLine p1:" + ps[0] + " ;p2:" + ps[1]; 
   }
 
+  void reverse() {
+     MyPoint p_temp = ps[0];
+     ps[0] = ps[1];
+     ps[1] = p_temp;
+  }
+  PVector direction() {
+    return PVector.sub(ps[1].p, ps[0].p);    
+  }
+
   void draw() {
     draw(c, 1);
   }

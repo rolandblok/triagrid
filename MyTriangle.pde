@@ -25,13 +25,13 @@ class MyTriangle extends MyElement {
     ps.put(TSide.MID, sort_list.get(1));
     ps.put(TSide.RIGHT, sort_list.get(2));
     
-    hatch_density = 5;
+    hatch_density = 2;
     PVector p0 = ps.get(TSide.MID).p;
     PVector p1 = ps.get(TSide.LEFT).p;
     PVector p2 = ps.get(TSide.RIGHT).p;  
 
     if (green(c_arg) < 255/3) {    
-      hatch_density = 7;
+      hatch_density = 5;
       if (ps.get(TSide.LEFT).p.y < ps.get(TSide.MID).p.y) {
         p0 = ps.get(TSide.LEFT).p;
         p1 = ps.get(TSide.MID).p;

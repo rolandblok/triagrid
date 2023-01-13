@@ -16,11 +16,11 @@ boolean draw_grid;
 
 
 int X_GRID = 50;
-int Y_GRID = 50;
+int Y_GRID = 60;
 Vector<MyPoint> grid;
 Vector<MyElement> drawables;
 
-String plot_name = "roland";
+String plot_name = "triagrid";
 
 MyPoint closest_point = null;
 MyElement possible_new_element = null;
@@ -32,7 +32,7 @@ MyPitch my_pitch;
 void createGrid() {
   println("createGrid");
   grid = new Vector<MyPoint>();
-  my_pitch = new MyPitch(50);
+  my_pitch = new MyPitch(30);
   
 
   for (int y = 0;  y < Y_GRID; y++) {
@@ -51,7 +51,8 @@ void createGrid() {
 
 void setup() {
   size(1400, 1400);
-
+  surface.setTitle(plot_name);
+  
   draw_fill = true;
   draw_lines = true;
   draw_grid = true;
@@ -239,6 +240,8 @@ void keyPressed() {
     
   } else if (key == 'n') {
     createGrid();
+    plot_name = "triagrid";
+    surface.setTitle(plot_name);
     drawables = new Vector<MyElement>();
   } else if (key == 'z') {
       draw_grid = !draw_grid;
