@@ -249,6 +249,15 @@ void keyPressed() {
       draw_lines = !draw_lines;
   } else if (key == 'c') {
       draw_fill = !draw_fill;
+  } else if (key == 'C') {
+    Iterator<MyElement> el_it = drawables.iterator();
+    while (el_it.hasNext()) {
+      MyElement e = el_it.next();
+      if ((e instanceof MyTriangle) && draw_fill) {
+        el_it.remove();
+      }
+    }
+    
   } else if (key == '=') {
       my_pitch.screen_scale = 1.1*my_pitch.screen_scale;
       my_pitch.recalc_grid();
@@ -271,7 +280,10 @@ void keyPressed() {
     svg.finalize();
     String filename = sketchPath() + "/svg/" + plot_name + ".svg";
     println("saving to : "+filename); 
-    svg.save(filename);
+    svg.save(filename + ".svg");
+
+    filename = sketchPath() + "/png/" + plot_name + ".png";
+    save(filename);
   } else if (key == 'q') {
     exit();
   }
