@@ -722,7 +722,7 @@
     }
   ],
   "my_pitch": {
-    "screen_scale": 50,
+    "screen_scale": 30,
     "type": "MyPitch"
   }
 }
