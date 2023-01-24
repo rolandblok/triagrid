@@ -1,0 +1,2409 @@
+<svg width='1400.0px' height='1400.0px' xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink'>
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M420.0 208.8 
+L405.0 182.7 
+L390.0 208.8 
+L420.0 208.8 
+L435.0 234.90001 
+L450.0 208.8 
+L435.0 182.7 
+L420.0 156.6 
+L405.0 130.5 
+L390.0 104.4 
+L375.0 130.5 
+L360.0 156.6 
+L345.0 182.7 
+L330.0 208.8 
+L315.0 234.90001 
+L300.0 261.0 
+L315.0 287.1 
+L300.0 313.2 
+L285.0 339.30002 
+L300.0 365.4 
+L330.0 365.4 
+L360.0 365.4 
+L390.0 365.4 
+L405.0 391.5 
+L390.0 417.6 
+L405.0 443.7 
+L435.0 443.7 
+L465.0 443.7 
+L495.0 443.7 
+L525.0 443.7 
+L555.0 443.7 
+L585.0 443.7 
+L615.0 443.7 
+L630.0 417.6 
+L615.0 391.5 
+L600.0 365.4 
+L585.0 339.30002 
+L570.0 313.2 
+L555.0 287.1 
+L540.0 261.0 
+L525.0 234.90001 
+L510.0 208.8 
+L495.0 182.7 
+L480.0 156.6 
+L465.0 130.5 
+L450.0 104.4 
+L435.0 78.3 
+L420.0 52.2 
+L405.0 26.1 
+L375.0 26.1 
+L360.0 52.2 
+L345.0 78.3 
+L330.0 104.4 
+L315.0 130.5 
+L300.0 156.6 
+L285.0 182.7 
+L270.0 208.8 
+L255.0 234.90001 
+L240.0 261.0 
+L225.0 287.1 
+L210.0 313.2 
+L195.0 339.30002 
+L180.0 365.4 
+L165.0 391.5 
+L150.0 417.6 
+L165.0 443.7 
+L195.0 443.7 
+L225.0 443.7 
+L255.0 443.7 
+L285.0 443.7 
+L315.0 443.7 
+L345.0 443.7 
+L375.0 443.7 
+L405.0 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M405.0 182.7 
+L375.0 182.7 
+L360.0 208.8 
+L345.0 234.90001 
+L330.0 261.0 
+L315.0 287.1 
+L285.0 287.1 
+L255.0 287.1 
+L240.0 313.2 
+L225.0 339.30002 
+L210.0 365.4 
+L195.0 391.5 
+L180.0 417.6 
+L195.0 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M330.0 208.8 
+L300.0 208.8 
+L285.0 234.90001 
+L315.0 234.90001 
+L345.0 234.90001 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M285.0 234.90001 
+L270.0 261.0 
+L300.0 261.0 
+L330.0 261.0 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M435.0 234.90001 
+L420.0 261.0 
+L405.0 234.90001 
+L375.0 234.90001 
+L360.0 261.0 
+L390.0 261.0 
+L405.0 234.90001 
+L435.0 234.90001 
+L450.0 261.0 
+L435.0 287.1 
+L450.0 313.2 
+L465.0 339.30002 
+L480.0 365.4 
+L450.0 365.4 
+L420.0 365.4 
+L405.0 391.5 
+L375.0 391.5 
+L345.0 391.5 
+L315.0 391.5 
+L285.0 391.5 
+L255.0 391.5 
+L225.0 391.5 
+L195.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M390.0 313.2 
+L360.0 313.2 
+L330.0 313.2 
+L315.0 339.30002 
+L345.0 339.30002 
+L375.0 339.30002 
+L390.0 313.2 
+L420.0 313.2 
+L405.0 287.1 
+L390.0 261.0 
+L375.0 287.1 
+L360.0 313.2 
+L345.0 339.30002 
+L360.0 365.4 
+L375.0 391.5 
+L360.0 417.6 
+L375.0 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M240.0 313.2 
+L270.0 313.2 
+L285.0 287.1 
+L270.0 261.0 
+L255.0 287.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M435.0 339.30002 
+L420.0 313.2 
+L405.0 339.30002 
+L435.0 339.30002 
+L450.0 365.4 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M420.0 261.0 
+L435.0 287.1 
+L465.0 287.1 
+L480.0 313.2 
+L495.0 339.30002 
+L480.0 365.4 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M360.0 365.4 
+L375.0 339.30002 
+L390.0 365.4 
+L405.0 339.30002 
+L420.0 365.4 
+L435.0 391.5 
+L420.0 417.6 
+L435.0 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M330.0 365.4 
+L315.0 339.30002 
+L285.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M450.0 104.4 
+L420.0 104.4 
+L405.0 78.3 
+L375.0 78.3 
+L360.0 104.4 
+L390.0 104.4 
+L405.0 78.3 
+L435.0 78.3 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M270.0 313.2 
+L255.0 339.30002 
+L240.0 365.4 
+L225.0 391.5 
+L210.0 417.6 
+L225.0 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M150.0 417.6 
+L180.0 417.6 
+L210.0 417.6 
+L240.0 417.6 
+L270.0 417.6 
+L300.0 417.6 
+L330.0 417.6 
+L360.0 417.6 
+L390.0 417.6 
+L420.0 417.6 
+L450.0 417.6 
+L480.0 417.6 
+L510.0 417.6 
+L540.0 417.6 
+L570.0 417.6 
+L585.0 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M465.0 443.7 
+L450.0 417.6 
+L465.0 391.5 
+L435.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M465.0 391.5 
+L495.0 391.5 
+L525.0 391.5 
+L555.0 391.5 
+L570.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M381.0 26.1 
+L378.0 31.320002 
+L366.0 52.2 
+L363.0 57.420002 
+L351.0 78.3 
+L348.0 83.520004 
+L336.0 104.4 
+L333.0 109.619995 
+L321.0 130.5 
+L318.0 135.72 
+L306.0 156.6 
+L303.0 161.81999 
+L291.0 182.7 
+L288.0 187.92 
+L276.0 208.8 
+L273.0 214.02 
+L261.0 234.90001 
+L258.0 240.12 
+L246.0 261.0 
+L243.00002 266.22 
+L231.0 287.1 
+L228.0 292.32 
+L216.0 313.2 
+L213.0 318.42 
+L201.0 339.30002 
+L198.0 344.52 
+L186.0 365.4 
+L183.0 370.62 
+L171.0 391.5 
+L168.0 396.72 
+L156.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M387.0 26.1 
+L381.0 36.54 
+L372.0 52.2 
+L366.0 62.640003 
+L357.0 78.3 
+L351.0 88.740005 
+L342.0 104.4 
+L336.0 114.840004 
+L327.0 130.5 
+L321.0 140.94 
+L312.0 156.6 
+L306.0 167.04001 
+L297.0 182.7 
+L291.0 193.14 
+L282.0 208.8 
+L276.0 219.23999 
+L267.0 234.90001 
+L261.0 245.34 
+L251.99998 261.0 
+L246.0 271.44 
+L237.0 287.1 
+L231.0 297.54 
+L222.0 313.2 
+L216.0 323.63998 
+L207.0 339.30002 
+L201.0 349.74 
+L192.0 365.4 
+L186.0 375.84 
+L177.0 391.5 
+L171.0 401.94 
+L162.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M393.0 26.1 
+L384.0 41.760002 
+L378.0 52.2 
+L369.0 67.86 
+L363.0 78.3 
+L354.0 93.96 
+L348.0 104.4 
+L339.0 120.06 
+L333.0 130.5 
+L324.0 146.16 
+L318.0 156.6 
+L309.0 172.26 
+L303.0 182.7 
+L294.0 198.36 
+L288.0 208.8 
+L279.0 224.46 
+L273.0 234.90001 
+L264.0 250.56001 
+L258.0 261.0 
+L249.0 276.66 
+L243.00002 287.1 
+L234.0 302.76 
+L228.0 313.2 
+L219.0 328.86002 
+L213.0 339.30002 
+L204.0 354.96002 
+L198.0 365.4 
+L189.0 381.06003 
+L183.0 391.5 
+L174.0 407.16 
+L168.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M399.0 26.1 
+L387.0 46.98 
+L384.0 52.2 
+L372.0 73.08 
+L369.0 78.3 
+L357.0 99.18 
+L354.0 104.4 
+L342.0 125.28001 
+L339.0 130.5 
+L327.0 151.38 
+L324.0 156.6 
+L312.0 177.48001 
+L309.0 182.7 
+L297.0 203.58 
+L294.0 208.8 
+L282.0 229.68001 
+L279.0 234.90001 
+L267.0 255.78001 
+L264.0 261.0 
+L251.99998 281.88 
+L249.0 287.1 
+L237.0 307.98 
+L234.0 313.2 
+L222.0 334.08002 
+L219.0 339.30002 
+L207.0 360.18002 
+L204.0 365.4 
+L192.0 386.28 
+L189.0 391.5 
+L177.0 412.38 
+L174.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M204.0 417.6 
+L207.0 412.38 
+L219.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M198.0 417.6 
+L204.0 407.16 
+L213.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M192.0 417.6 
+L201.0 401.94 
+L207.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M186.0 417.6 
+L198.0 396.72 
+L201.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M234.0 417.6 
+L237.0 412.38 
+L249.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M228.0 417.6 
+L234.0 407.16 
+L243.00002 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M222.0 417.6 
+L231.0 401.94 
+L237.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M216.0 417.6 
+L228.0 396.72 
+L231.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M264.0 417.6 
+L267.0 412.38 
+L279.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M258.0 417.6 
+L264.0 407.16 
+L273.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M251.99998 417.6 
+L261.0 401.94 
+L267.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M246.0 417.6 
+L258.0 396.72 
+L261.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M255.0 391.5 
+L240.0 417.6 
+L255.0 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M294.0 417.6 
+L297.0 412.38 
+L309.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M288.0 417.6 
+L294.0 407.16 
+L303.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M282.0 417.6 
+L291.0 401.94 
+L297.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M276.0 417.6 
+L288.0 396.72 
+L291.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M285.0 391.5 
+L270.0 417.6 
+L285.0 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M324.0 417.6 
+L327.0 412.38 
+L339.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M318.0 417.6 
+L324.0 407.16 
+L333.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M312.0 417.6 
+L321.0 401.94 
+L327.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M306.0 417.6 
+L318.0 396.72 
+L321.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M315.0 391.5 
+L300.0 417.6 
+L315.0 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M354.0 417.6 
+L357.0 412.38 
+L369.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M348.0 417.6 
+L354.0 407.16 
+L363.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M342.0 417.6 
+L351.0 401.94 
+L357.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M336.0 417.6 
+L348.0 396.72 
+L351.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M345.0 391.5 
+L330.0 417.6 
+L345.0 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M384.0 417.6 
+L387.0 412.38 
+L399.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M378.0 417.6 
+L384.0 407.16 
+L393.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M372.0 417.6 
+L381.0 401.94 
+L387.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M366.0 417.6 
+L378.0 396.72 
+L381.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M414.0 417.6 
+L417.0 412.38 
+L429.0 391.5 
+L432.0 386.28 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M408.0 417.6 
+L414.0 407.16 
+L423.0 391.5 
+L429.0 381.06003 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M402.0 417.6 
+L411.0 401.94 
+L417.0 391.5 
+L426.0 375.84 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M396.0 417.6 
+L408.0 396.72 
+L411.0 391.5 
+L423.0 370.62 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M444.0 417.6 
+L447.0 412.38 
+L459.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M438.0 417.6 
+L444.0 407.16 
+L453.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M432.0 417.6 
+L441.0 401.94 
+L447.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M426.0 417.6 
+L438.0 396.72 
+L441.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M474.0 417.6 
+L477.0 412.38 
+L488.99997 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M468.0 417.6 
+L474.0 407.16 
+L483.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M462.0 417.6 
+L471.0 401.94 
+L477.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M456.0 417.6 
+L468.0 396.72 
+L471.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M503.99997 417.6 
+L507.0 412.38 
+L519.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M498.0 417.6 
+L503.99997 407.16 
+L513.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M492.0 417.6 
+L501.00003 401.94 
+L507.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M486.00003 417.6 
+L498.0 396.72 
+L501.00003 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M495.0 443.7 
+L480.0 417.6 
+L495.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M534.0 417.6 
+L537.0 412.38 
+L549.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M528.0 417.6 
+L534.0 407.16 
+L543.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M522.0 417.6 
+L531.0 401.94 
+L537.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M516.0 417.6 
+L528.0 396.72 
+L531.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M525.0 443.7 
+L510.0 417.6 
+L525.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M564.0 417.6 
+L567.0 412.38 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M558.0 417.6 
+L564.0 407.16 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M552.0 417.6 
+L561.0 401.94 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M546.0 417.6 
+L558.0 396.72 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M555.0 443.7 
+L540.0 417.6 
+L555.0 391.5 
+L540.0 365.4 
+L525.0 339.30002 
+L510.0 313.2 
+L495.0 287.1 
+L480.0 261.0 
+L465.0 234.90001 
+L450.0 208.8 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M408.0 344.52 
+L396.0 365.4 
+L393.0 370.62 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M411.0 349.74 
+L402.0 365.4 
+L396.0 375.84 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M414.0 354.96002 
+L408.0 365.4 
+L399.0 381.06003 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M417.0 360.18002 
+L414.0 365.4 
+L402.0 386.28 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M396.0 313.2 
+L393.0 318.42 
+L381.0 339.30002 
+L378.0 344.52 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M402.0 313.2 
+L396.0 323.63998 
+L387.0 339.30002 
+L381.0 349.74 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M408.0 313.2 
+L399.0 328.86002 
+L393.0 339.30002 
+L384.0 354.96002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M414.0 313.2 
+L402.0 334.08002 
+L399.0 339.30002 
+L387.0 360.18002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M366.0 313.2 
+L363.0 318.42 
+L351.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M372.0 313.2 
+L366.0 323.63998 
+L357.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M378.0 313.2 
+L369.0 328.86002 
+L363.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M384.0 313.2 
+L372.0 334.08002 
+L369.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M336.0 313.2 
+L333.0 318.42 
+L321.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M342.0 313.2 
+L336.0 323.63998 
+L327.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M348.0 313.2 
+L339.0 328.86002 
+L333.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M354.0 313.2 
+L342.0 334.08002 
+L339.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M381.0 182.7 
+L378.0 187.92 
+L366.0 208.8 
+L363.0 214.02 
+L351.0 234.90001 
+L348.0 240.12 
+L336.0 261.0 
+L333.0 266.22 
+L321.0 287.1 
+L318.0 292.32 
+L306.0 313.2 
+L303.0 318.42 
+L291.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M387.0 182.7 
+L381.0 193.14 
+L372.0 208.8 
+L366.0 219.23999 
+L357.0 234.90001 
+L351.0 245.34 
+L342.0 261.0 
+L336.0 271.44 
+L327.0 287.1 
+L321.0 297.54 
+L312.0 313.2 
+L306.0 323.63998 
+L297.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M393.0 182.7 
+L384.0 198.36 
+L378.0 208.8 
+L369.0 224.46 
+L363.0 234.90001 
+L354.0 250.56001 
+L348.0 261.0 
+L339.0 276.66 
+L333.0 287.1 
+L324.0 302.76 
+L318.0 313.2 
+L309.0 328.86002 
+L303.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M399.0 182.7 
+L387.0 203.58 
+L384.0 208.8 
+L372.0 229.68001 
+L369.0 234.90001 
+L357.0 255.78001 
+L354.0 261.0 
+L342.0 281.88 
+L339.0 287.1 
+L327.0 307.98 
+L324.0 313.2 
+L312.0 334.08002 
+L309.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M330.0 313.2 
+L345.0 287.1 
+L360.0 261.0 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M321.0 234.90001 
+L318.0 240.12 
+L306.0 261.0 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M327.0 234.90001 
+L321.0 245.34 
+L312.0 261.0 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M333.0 234.90001 
+L324.0 250.56001 
+L318.0 261.0 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M339.0 234.90001 
+L327.0 255.78001 
+L324.0 261.0 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M291.0 234.90001 
+L288.0 240.12 
+L276.0 261.0 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M297.0 234.90001 
+L291.0 245.34 
+L282.0 261.0 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M303.0 234.90001 
+L294.0 250.56001 
+L288.0 261.0 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M309.0 234.90001 
+L297.0 255.78001 
+L294.0 261.0 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M300.0 208.8 
+L315.0 182.7 
+L330.0 156.6 
+L345.0 130.5 
+L360.0 104.4 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M375.0 78.3 
+L390.0 52.2 
+L405.0 26.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M375.0 234.90001 
+L390.0 208.8 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M429.0 339.30002 
+L432.0 334.08002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M423.0 339.30002 
+L429.0 328.86002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M417.0 339.30002 
+L426.0 323.63998 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M411.0 339.30002 
+L423.0 318.42 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M403.33334 81.200005 
+L416.6667 104.4 
+L418.33334 107.3 
+L431.6667 130.5 
+L433.33334 133.40001 
+L446.6667 156.6 
+L448.33334 159.5 
+L461.6667 182.7 
+L463.33334 185.6 
+L476.6667 208.8 
+L478.33334 211.7 
+L491.6667 234.90001 
+L493.33334 237.79999 
+L506.6667 261.0 
+L508.33334 263.9 
+L521.6667 287.1 
+L523.3333 290.0 
+L536.6667 313.2 
+L538.3333 316.1 
+L551.6667 339.30002 
+L553.3333 342.19998 
+L566.6667 365.4 
+L568.3333 368.3 
+L581.6667 391.5 
+L583.3333 394.4 
+L596.6667 417.6 
+L598.3333 420.5 
+L611.6667 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M401.6667 84.100006 
+L413.33334 104.4 
+L416.6667 110.200005 
+L428.33334 130.5 
+L431.6667 136.3 
+L443.33334 156.6 
+L446.6667 162.40001 
+L458.33334 182.7 
+L461.6667 188.5 
+L473.33334 208.8 
+L476.6667 214.6 
+L488.33337 234.90001 
+L491.6667 240.70001 
+L503.33337 261.0 
+L506.6667 266.80002 
+L518.3334 287.1 
+L521.6667 292.9 
+L533.3334 313.2 
+L536.6667 319.0 
+L548.3334 339.30002 
+L551.6667 345.1 
+L563.3334 365.4 
+L566.6667 371.2 
+L578.3334 391.5 
+L581.6667 397.30002 
+L593.3334 417.6 
+L596.6667 423.4 
+L608.3334 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M400.0 87.0 
+L410.0 104.4 
+L415.0 113.100006 
+L425.0 130.5 
+L430.0 139.20001 
+L440.0 156.6 
+L445.0 165.3 
+L455.0 182.7 
+L460.0 191.40001 
+L470.0 208.8 
+L475.0 217.5 
+L484.99997 234.90001 
+L490.00003 243.59999 
+L499.99997 261.0 
+L505.00003 269.69998 
+L515.0 287.1 
+L520.0 295.8 
+L530.0 313.2 
+L535.0 321.9 
+L545.0 339.30002 
+L550.0 348.0 
+L560.0 365.4 
+L565.0 374.1 
+L575.0 391.5 
+L580.0 400.2 
+L590.0 417.6 
+L595.0 426.30002 
+L605.0 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M398.33334 89.9 
+L406.66666 104.4 
+L413.33334 116.00001 
+L421.66666 130.5 
+L428.33334 142.1 
+L436.66666 156.6 
+L443.33334 168.20001 
+L451.66666 182.7 
+L458.33334 194.3 
+L466.66666 208.8 
+L473.33334 220.40001 
+L481.66666 234.90001 
+L488.33337 246.50002 
+L496.66666 261.0 
+L503.33337 272.6 
+L511.66666 287.1 
+L518.3334 298.7 
+L526.6667 313.2 
+L533.3334 324.80002 
+L541.6667 339.30002 
+L548.3334 350.90002 
+L556.6667 365.4 
+L563.3334 377.0 
+L571.6667 391.5 
+L578.3334 403.1 
+L586.6667 417.6 
+L593.3334 429.2 
+L601.6667 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M396.66666 92.8 
+L403.33334 104.4 
+L411.66666 118.899994 
+L418.33334 130.5 
+L426.66666 145.0 
+L433.33334 156.6 
+L441.66666 171.09999 
+L448.33334 182.7 
+L456.66666 197.2 
+L463.33334 208.8 
+L471.66666 223.3 
+L478.33334 234.90001 
+L486.66663 249.4 
+L493.33334 261.0 
+L501.66663 275.5 
+L508.33334 287.1 
+L516.6666 301.6 
+L523.3333 313.2 
+L531.6666 327.7 
+L538.3333 339.30002 
+L546.6666 353.8 
+L553.3333 365.4 
+L561.6666 379.9 
+L568.3333 391.5 
+L576.6666 406.0 
+L583.3333 417.6 
+L591.6666 432.1 
+L598.3333 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M395.0 95.700005 
+L400.0 104.4 
+L410.0 121.799995 
+L415.0 130.5 
+L425.0 147.9 
+L430.0 156.6 
+L440.0 174.0 
+L445.0 182.7 
+L455.0 200.1 
+L460.0 208.8 
+L470.0 226.20001 
+L475.0 234.90001 
+L484.99997 252.30002 
+L490.00003 261.0 
+L499.99997 278.40002 
+L505.00003 287.1 
+L515.0 304.5 
+L520.0 313.2 
+L530.0 330.6 
+L535.0 339.30002 
+L545.0 356.7 
+L550.0 365.4 
+L560.0 382.80002 
+L565.0 391.5 
+L575.0 408.90002 
+L580.0 417.6 
+L590.0 435.0 
+L595.0 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M393.3333 98.6 
+L396.66666 104.4 
+L408.3333 124.7 
+L411.66666 130.5 
+L423.3333 150.8 
+L426.66666 156.6 
+L438.3333 176.9 
+L441.66666 182.7 
+L453.3333 203.0 
+L456.66666 208.8 
+L468.3333 229.1 
+L471.66666 234.90001 
+L483.3333 255.2 
+L486.66663 261.0 
+L498.3333 281.3 
+L501.66663 287.1 
+L513.3333 307.4 
+L516.6666 313.2 
+L528.3333 333.5 
+L531.6666 339.30002 
+L543.3333 359.6 
+L546.6666 365.4 
+L558.3333 385.7 
+L561.6666 391.5 
+L573.3333 411.80002 
+L576.6666 417.6 
+L588.3333 437.90002 
+L591.6666 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M391.66666 101.5 
+L393.3333 104.4 
+L406.66666 127.6 
+L408.3333 130.5 
+L421.66666 153.7 
+L423.3333 156.6 
+L436.66666 179.8 
+L438.3333 182.7 
+L451.66666 205.90001 
+L453.3333 208.8 
+L466.66666 232.00002 
+L468.3333 234.90001 
+L481.66666 258.1 
+L483.3333 261.0 
+L496.66666 284.2 
+L498.3333 287.1 
+L511.66666 310.30002 
+L513.3333 313.2 
+L526.6667 336.40002 
+L528.3333 339.30002 
+L541.6667 362.50003 
+L543.3333 365.4 
+L556.6667 388.6 
+L558.3333 391.5 
+L571.6667 414.7 
+L573.3333 417.6 
+L586.6667 440.80002 
+L588.3333 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M558.3333 443.7 
+L556.6667 440.80002 
+L543.3333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M561.6666 443.7 
+L558.3333 437.90002 
+L546.6666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M565.0 443.7 
+L560.0 435.0 
+L550.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M568.3333 443.7 
+L561.6666 432.1 
+L553.3333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M571.6667 443.7 
+L563.3334 429.2 
+L556.6667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M575.0 443.7 
+L565.0 426.30002 
+L560.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M578.3334 443.7 
+L566.6667 423.4 
+L563.3334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M581.6667 443.7 
+L568.3333 420.5 
+L566.6667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M528.3333 443.7 
+L526.6667 440.80002 
+L513.3333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M531.6666 443.7 
+L528.3333 437.90002 
+L516.6666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M535.0 443.7 
+L530.0 435.0 
+L520.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M538.3333 443.7 
+L531.6666 432.1 
+L523.3333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M541.6667 443.7 
+L533.3334 429.2 
+L526.6667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M545.0 443.7 
+L535.0 426.30002 
+L530.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M548.3334 443.7 
+L536.6667 423.4 
+L533.3334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M551.6667 443.7 
+L538.3333 420.5 
+L536.6667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M498.3333 443.7 
+L496.66666 440.80002 
+L483.3333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M501.66663 443.7 
+L498.3333 437.90002 
+L486.66663 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M505.00003 443.7 
+L499.99997 435.0 
+L490.00003 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M508.33334 443.7 
+L501.66663 432.1 
+L493.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M511.66666 443.7 
+L503.33337 429.2 
+L496.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M515.0 443.7 
+L505.00003 426.30002 
+L499.99997 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M518.3334 443.7 
+L506.6667 423.4 
+L503.33337 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M521.6667 443.7 
+L508.33334 420.5 
+L506.6667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M468.3333 443.7 
+L466.66666 440.80002 
+L453.3333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M471.66666 443.7 
+L468.3333 437.90002 
+L456.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M475.0 443.7 
+L470.0 435.0 
+L460.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M478.33334 443.7 
+L471.66666 432.1 
+L463.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M481.66666 443.7 
+L473.33334 429.2 
+L466.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M484.99997 443.7 
+L475.0 426.30002 
+L470.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M488.33337 443.7 
+L476.6667 423.4 
+L473.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M491.6667 443.7 
+L478.33334 420.5 
+L476.6667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M438.3333 443.7 
+L436.66666 440.80002 
+L423.3333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M441.66666 443.7 
+L438.3333 437.90002 
+L426.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M445.0 443.7 
+L440.0 435.0 
+L430.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M448.33334 443.7 
+L441.66666 432.1 
+L433.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M451.66666 443.7 
+L443.33334 429.2 
+L436.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M455.0 443.7 
+L445.0 426.30002 
+L440.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M458.33334 443.7 
+L446.6667 423.4 
+L443.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M461.6667 443.7 
+L448.33334 420.5 
+L446.6667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M408.3333 443.7 
+L406.66666 440.80002 
+L393.3333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M411.66666 443.7 
+L408.3333 437.90002 
+L396.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M415.0 443.7 
+L410.0 435.0 
+L400.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M418.33334 443.7 
+L411.66666 432.1 
+L403.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M421.66666 443.7 
+L413.33334 429.2 
+L406.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M425.0 443.7 
+L415.0 426.30002 
+L410.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M428.33334 443.7 
+L416.6667 423.4 
+L413.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M431.6667 443.7 
+L418.33334 420.5 
+L416.6667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M378.3333 443.7 
+L376.66666 440.80002 
+L363.3333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M381.66666 443.7 
+L378.3333 437.90002 
+L366.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M385.0 443.7 
+L380.0 435.0 
+L370.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M388.33334 443.7 
+L381.66666 432.1 
+L373.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M391.66666 443.7 
+L383.33334 429.2 
+L376.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M395.0 443.7 
+L385.0 426.30002 
+L380.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M398.33334 443.7 
+L386.6667 423.4 
+L383.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M401.6667 443.7 
+L388.33334 420.5 
+L386.6667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M348.3333 443.7 
+L346.66666 440.80002 
+L333.3333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M351.66666 443.7 
+L348.3333 437.90002 
+L336.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M355.0 443.7 
+L350.0 435.0 
+L340.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M358.33334 443.7 
+L351.66666 432.1 
+L343.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M361.66666 443.7 
+L353.33334 429.2 
+L346.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M365.0 443.7 
+L355.0 426.30002 
+L350.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M368.33334 443.7 
+L356.6667 423.4 
+L353.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M371.6667 443.7 
+L358.33334 420.5 
+L356.6667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M318.3333 443.7 
+L316.66666 440.80002 
+L303.3333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M321.66666 443.7 
+L318.3333 437.90002 
+L306.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M325.0 443.7 
+L320.0 435.0 
+L310.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M328.33334 443.7 
+L321.66666 432.1 
+L313.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M331.66666 443.7 
+L323.33334 429.2 
+L316.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M335.0 443.7 
+L325.0 426.30002 
+L320.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M338.33334 443.7 
+L326.6667 423.4 
+L323.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M341.6667 443.7 
+L328.33334 420.5 
+L326.6667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M288.3333 443.7 
+L286.66666 440.80002 
+L273.3333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M291.66666 443.7 
+L288.3333 437.90002 
+L276.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M295.0 443.7 
+L290.0 435.0 
+L280.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M298.33334 443.7 
+L291.66666 432.1 
+L283.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M301.66666 443.7 
+L293.33334 429.2 
+L286.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M305.0 443.7 
+L295.0 426.30002 
+L290.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M308.33334 443.7 
+L296.6667 423.4 
+L293.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M311.6667 443.7 
+L298.33334 420.5 
+L296.6667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M258.3333 443.7 
+L256.66666 440.80002 
+L243.33331 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M261.66666 443.7 
+L258.3333 437.90002 
+L246.66667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M265.0 443.7 
+L260.0 435.0 
+L249.99998 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M268.33334 443.7 
+L261.66666 432.1 
+L253.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M271.66666 443.7 
+L263.33334 429.2 
+L256.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M275.0 443.7 
+L265.0 426.30002 
+L260.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M278.33334 443.7 
+L266.6667 423.4 
+L263.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M281.6667 443.7 
+L268.33334 420.5 
+L266.6667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M228.33333 443.7 
+L226.66666 440.80002 
+L213.33333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M231.66667 443.7 
+L228.33333 437.90002 
+L216.66667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M235.0 443.7 
+L230.0 435.0 
+L220.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M238.33334 443.7 
+L231.66667 432.1 
+L223.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M241.66666 443.7 
+L233.33333 429.2 
+L226.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M245.00002 443.7 
+L235.0 426.30002 
+L230.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M248.33333 443.7 
+L236.66667 423.4 
+L233.33333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M251.66669 443.7 
+L238.33334 420.5 
+L236.66667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M198.33333 443.7 
+L196.66666 440.80002 
+L183.33333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M201.66667 443.7 
+L198.33333 437.90002 
+L186.66667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M205.0 443.7 
+L200.0 435.0 
+L190.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M208.33334 443.7 
+L201.66667 432.1 
+L193.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M211.66666 443.7 
+L203.33333 429.2 
+L196.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M215.0 443.7 
+L205.0 426.30002 
+L200.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M218.33333 443.7 
+L206.66667 423.4 
+L203.33333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M221.66667 443.7 
+L208.33334 420.5 
+L206.66667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M168.33333 443.7 
+L166.66666 440.80002 
+L153.33333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M171.66667 443.7 
+L168.33333 437.90002 
+L156.66667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M175.0 443.7 
+L170.0 435.0 
+L160.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M178.33334 443.7 
+L171.66667 432.1 
+L163.33334 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M181.66666 443.7 
+L173.33333 429.2 
+L166.66666 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M185.0 443.7 
+L175.0 426.30002 
+L170.0 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M188.33333 443.7 
+L176.66667 423.4 
+L173.33333 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M191.66667 443.7 
+L178.33334 420.5 
+L176.66667 417.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M630.0 417.6 
+L600.0 417.6 
+L615.0 443.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M600.0 417.6 
+L585.0 391.5 
+L570.0 365.4 
+L555.0 339.30002 
+L540.0 313.2 
+L525.0 287.1 
+L510.0 261.0 
+L495.0 234.90001 
+L480.0 208.8 
+L465.0 182.7 
+L450.0 156.6 
+L435.0 130.5 
+L420.0 104.4 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M451.66666 258.1 
+L438.3333 234.90001 
+L436.66666 232.00002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M453.3333 255.2 
+L441.66666 234.90001 
+L438.3333 229.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M455.0 252.30002 
+L445.0 234.90001 
+L440.0 226.20001 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M456.66666 249.4 
+L448.33334 234.90001 
+L441.66666 223.3 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M458.33334 246.50002 
+L451.66666 234.90001 
+L443.33334 220.40001 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M460.0 243.59999 
+L455.0 234.90001 
+L445.0 217.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M461.6667 240.70001 
+L458.33334 234.90001 
+L446.6667 214.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M463.33334 237.79999 
+L461.6667 234.90001 
+L448.33334 211.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M436.66666 284.2 
+L423.3333 261.0 
+L421.66666 258.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M438.3333 281.3 
+L426.66666 261.0 
+L423.3333 255.2 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M440.0 278.40002 
+L430.0 261.0 
+L425.0 252.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M441.66666 275.5 
+L433.33334 261.0 
+L426.66666 249.4 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M443.33334 272.6 
+L436.66666 261.0 
+L428.33334 246.50002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M445.0 269.69998 
+L440.0 261.0 
+L430.0 243.59999 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M446.6667 266.80002 
+L443.33334 261.0 
+L431.6667 240.70001 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M448.33334 263.9 
+L446.6667 261.0 
+L433.33334 237.79999 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M453.3333 365.4 
+L451.66666 362.50003 
+L438.3333 339.30002 
+L436.66666 336.40002 
+L423.3333 313.2 
+L421.66666 310.30002 
+L408.3333 287.1 
+L406.66666 284.2 
+L393.3333 261.0 
+L391.66666 258.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M456.66666 365.4 
+L453.3333 359.6 
+L441.66666 339.30002 
+L438.3333 333.5 
+L426.66666 313.2 
+L423.3333 307.4 
+L411.66666 287.1 
+L408.3333 281.3 
+L396.66666 261.0 
+L393.3333 255.2 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M460.0 365.4 
+L455.0 356.7 
+L445.0 339.30002 
+L440.0 330.6 
+L430.0 313.2 
+L425.0 304.5 
+L415.0 287.1 
+L410.0 278.40002 
+L400.0 261.0 
+L395.0 252.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M463.33334 365.4 
+L456.66666 353.8 
+L448.33334 339.30002 
+L441.66666 327.7 
+L433.33334 313.2 
+L426.66666 301.6 
+L418.33334 287.1 
+L411.66666 275.5 
+L403.33334 261.0 
+L396.66666 249.4 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M466.66666 365.4 
+L458.33334 350.90002 
+L451.66666 339.30002 
+L443.33334 324.80002 
+L436.66666 313.2 
+L428.33334 298.7 
+L421.66666 287.1 
+L413.33334 272.6 
+L406.66666 261.0 
+L398.33334 246.50002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M470.0 365.4 
+L460.0 348.0 
+L455.0 339.30002 
+L445.0 321.9 
+L440.0 313.2 
+L430.0 295.8 
+L425.0 287.1 
+L415.0 269.69998 
+L410.0 261.0 
+L400.0 243.59999 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M473.33334 365.4 
+L461.6667 345.1 
+L458.33334 339.30002 
+L446.6667 319.0 
+L443.33334 313.2 
+L431.6667 292.9 
+L428.33334 287.1 
+L416.6667 266.80002 
+L413.33334 261.0 
+L401.6667 240.70001 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M476.6667 365.4 
+L463.33334 342.19998 
+L461.6667 339.30002 
+L448.33334 316.1 
+L446.6667 313.2 
+L433.33334 290.0 
+L431.6667 287.1 
+L418.33334 263.9 
+L416.6667 261.0 
+L403.33334 237.79999 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M423.3333 365.4 
+L421.66666 362.50003 
+L408.3333 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M426.66666 365.4 
+L423.3333 359.6 
+L411.66666 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M430.0 365.4 
+L425.0 356.7 
+L415.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M433.33334 365.4 
+L426.66666 353.8 
+L418.33334 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M436.66666 365.4 
+L428.33334 350.90002 
+L421.66666 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M440.0 365.4 
+L430.0 348.0 
+L425.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M443.33334 365.4 
+L431.6667 345.1 
+L428.33334 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M446.6667 365.4 
+L433.33334 342.19998 
+L431.6667 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M622.5 404.55002 
+L607.5 404.55002 
+L592.5 404.55002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M622.5 430.65 
+L607.5 430.65 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M607.5 378.45 
+L592.5 378.45 
+L577.5 378.45 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M615.0 391.5 
+L585.0 391.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M592.5 352.35 
+L577.5 352.35 
+L562.5 352.35 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M600.0 365.4 
+L570.0 365.4 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M577.5 326.25 
+L562.5 326.25 
+L547.5 326.25 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M585.0 339.30002 
+L555.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M562.5 300.15 
+L547.5 300.15 
+L532.5 300.15 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M570.0 313.2 
+L540.0 313.2 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M547.5 274.05002 
+L532.5 274.05002 
+L517.5 274.05002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M555.0 287.1 
+L525.0 287.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M532.5 247.95 
+L517.5 247.95 
+L502.5 247.95 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M540.0 261.0 
+L510.0 261.0 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M517.5 221.85 
+L502.5 221.85 
+L487.5 221.85 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M525.0 234.90001 
+L495.0 234.90001 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M502.5 195.75 
+L487.5 195.75 
+L472.5 195.75 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M510.0 208.8 
+L480.0 208.8 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M487.5 169.65001 
+L472.5 169.65001 
+L457.5 169.65001 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M495.0 182.7 
+L465.0 182.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M472.5 143.55 
+L457.5 143.55 
+L442.5 143.55 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M480.0 156.6 
+L450.0 156.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M457.5 117.450005 
+L442.5 117.450005 
+L427.5 117.450005 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M465.0 130.5 
+L435.0 130.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M442.5 91.35 
+L427.5 91.35 
+L412.5 91.35 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M427.5 65.25 
+L412.5 65.25 
+L397.5 65.25 
+L382.5 65.25 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M397.5 91.35 
+L382.5 91.35 
+L367.5 91.35 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M382.5 117.450005 
+L367.5 117.450005 
+L352.5 117.450005 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M367.5 143.55 
+L352.5 143.55 
+L337.5 143.55 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M375.0 130.5 
+L345.0 130.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M352.5 169.65001 
+L337.5 169.65001 
+L322.5 169.65001 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M360.0 156.6 
+L330.0 156.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M337.5 195.75 
+L322.5 195.75 
+L307.5 195.75 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M345.0 182.7 
+L315.0 182.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M322.5 221.85 
+L307.5 221.85 
+L292.5 221.85 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M412.5 39.15 
+L397.5 39.15 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M420.0 52.2 
+L390.0 52.2 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M277.5 300.15 
+L262.5 300.15 
+L247.5 300.15 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M262.5 326.25 
+L247.5 326.25 
+L232.5 326.25 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M247.5 352.35 
+L232.5 352.35 
+L217.5 352.35 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M225.0 339.30002 
+L255.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M232.5 378.45 
+L217.5 378.45 
+L202.5 378.45 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M210.0 365.4 
+L240.0 365.4 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M277.5 274.05002 
+L262.5 274.05002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M296.6667 261.0 
+L298.33334 263.9 
+L311.6667 287.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M293.33334 261.0 
+L296.6667 266.80002 
+L308.33334 287.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M290.0 261.0 
+L295.0 269.69998 
+L305.0 287.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M286.66666 261.0 
+L293.33334 272.6 
+L301.66666 287.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M283.33334 261.0 
+L291.66666 275.5 
+L298.33334 287.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M280.0 261.0 
+L290.0 278.40002 
+L295.0 287.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M276.66666 261.0 
+L288.3333 281.3 
+L291.66666 287.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M273.3333 261.0 
+L286.66666 284.2 
+L288.3333 287.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M326.6667 261.0 
+L328.33334 263.9 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M323.33334 261.0 
+L326.6667 266.80002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M320.0 261.0 
+L325.0 269.69998 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M316.66666 261.0 
+L323.33334 272.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M313.33334 261.0 
+L321.66666 275.5 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M310.0 261.0 
+L320.0 278.40002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M306.66666 261.0 
+L318.3333 281.3 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M303.3333 261.0 
+L316.66666 284.2 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M427.5 221.85 
+L412.5 221.85 
+L397.5 221.85 
+L382.5 221.85 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M427.5 247.95 
+L412.5 247.95 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M412.5 195.75 
+L397.5 195.75 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M397.5 247.95 
+L382.5 247.95 
+L367.5 247.95 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M382.5 274.05002 
+L367.5 274.05002 
+L352.5 274.05002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M367.5 300.15 
+L352.5 300.15 
+L337.5 300.15 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M375.0 287.1 
+L345.0 287.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M472.5 300.15 
+L457.5 300.15 
+L442.5 300.15 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M487.5 326.25 
+L472.5 326.25 
+L457.5 326.25 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M450.0 313.2 
+L480.0 313.2 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M487.5 352.35 
+L472.5 352.35 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M465.0 339.30002 
+L495.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M468.0 240.12 
+L456.0 261.0 
+L453.0 266.22 
+L441.0 287.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M471.0 245.34 
+L462.0 261.0 
+L456.0 271.44 
+L447.0 287.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M474.0 250.56001 
+L468.0 261.0 
+L459.0 276.66 
+L453.0 287.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M477.0 255.78001 
+L474.0 261.0 
+L462.0 281.88 
+L459.0 287.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M465.0 287.1 
+L480.0 261.0 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M450.0 261.0 
+L465.0 234.90001 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M333.3333 365.4 
+L331.66666 362.50003 
+L318.3333 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M336.66666 365.4 
+L333.3333 359.6 
+L321.66666 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M340.0 365.4 
+L335.0 356.7 
+L325.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M343.33334 365.4 
+L336.66666 353.8 
+L328.33334 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M346.66666 365.4 
+L338.33334 350.90002 
+L331.66666 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M350.0 365.4 
+L340.0 348.0 
+L335.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M353.33334 365.4 
+L341.6667 345.1 
+L338.33334 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M356.6667 365.4 
+L343.33334 342.19998 
+L341.6667 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M303.3333 365.4 
+L301.66666 362.50003 
+L288.3333 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M306.66666 365.4 
+L303.3333 359.6 
+L291.66666 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M310.0 365.4 
+L305.0 356.7 
+L295.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M313.33334 365.4 
+L306.66666 353.8 
+L298.33334 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M316.66666 365.4 
+L308.33334 350.90002 
+L301.66666 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M320.0 365.4 
+L310.0 348.0 
+L305.0 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M323.33334 365.4 
+L311.6667 345.1 
+L308.33334 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M326.6667 365.4 
+L313.33334 342.19998 
+L311.6667 339.30002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M371.6667 339.30002 
+L373.33334 342.19998 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M368.33334 339.30002 
+L371.6667 345.1 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M365.0 339.30002 
+L370.0 348.0 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M361.66666 339.30002 
+L368.33334 350.90002 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M358.33334 339.30002 
+L366.66666 353.8 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M355.0 339.30002 
+L365.0 356.7 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M351.66666 339.30002 
+L363.3333 359.6 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M348.3333 339.30002 
+L361.66666 362.50003 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M382.5 352.35 
+L367.5 352.35 
+ '  />
+<path fill='none' stroke='#000000' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''
+d= 'M397.5 378.45 
+L382.5 378.45 
+L367.5 378.45 
+ '  />
+</svg>
