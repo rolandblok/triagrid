@@ -29,11 +29,11 @@ boolean triangle_fill_mode_on = false;
 
 MyPitch my_pitch;
 
+
 void createGrid() {
   println("createGrid");
   grid = new Vector<MyPoint>();
   my_pitch = new MyPitch(30);
-  
 
   for (int y = 0;  y < Y_GRID; y++) {
     float offset = 0;
@@ -81,6 +81,7 @@ void draw() {
       e.draw();
     }
   }
+
   
   if (closest_point != null) {
       closest_point.draw(color(0, 255, 0), 1);

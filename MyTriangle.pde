@@ -31,7 +31,7 @@ class MyTriangle extends MyElement {
     PVector p2 = ps.get(TSide.RIGHT).p;  
 
     if (green(c_arg) < 255/3) {    
-      hatch_density = 5;
+      hatch_density = 4;
       if (ps.get(TSide.LEFT).p.y < ps.get(TSide.MID).p.y) {
         p0 = ps.get(TSide.LEFT).p;
         p1 = ps.get(TSide.MID).p;
@@ -42,7 +42,7 @@ class MyTriangle extends MyElement {
         p2 = ps.get(TSide.LEFT).p;        
       }
     } else if (green(c_arg) < 2*255/3) {
-      hatch_density = 9;
+      hatch_density = 7;
       if (ps.get(TSide.LEFT).p.y < ps.get(TSide.MID).p.y) {
         p0 = ps.get(TSide.RIGHT).p;
         p1 = ps.get(TSide.MID).p;

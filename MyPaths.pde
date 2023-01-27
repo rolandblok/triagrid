@@ -8,7 +8,7 @@ class MyPaths {
   
   public MyPaths(Vector<MyElement> elements)
   {
-      // initialise variables. WIll be overwritten by first line.
+      // initialise variables. Will be overwritten by first line.
       c = "#000000";
       thickness = 1;
       paths_list = new LinkedList<LinkedList<PVector>>();
@@ -128,6 +128,7 @@ class MyPaths {
           
       }
       println(" number of paths " + getNoPaths() );
+      
   
       return;
   
@@ -155,27 +156,7 @@ class MyPaths {
        }
     }
     
-  //}
-
-  //    Iterator<MyLine> line_it1 = visible_lines.iterator();
-      
-  //    while (line_it1.hasNext()) {
-  //        MyLine line1 = line_it.next();
-          
-  //        while (line_) {
-  //            if (line_it2.equals(line_it)) {
-  //                visible_lines.remove(line_it);
-  //                line_it.next();
-  //                //cout << ".";
-  //                break;
-  //            }
-  //            else {
-  //                line_it2.next;
-  //            }
-  //        }
-  //        line_it.next;
-  //    }
-      return no_lines_start - visible_lines.size();
+    return no_lines_start - visible_lines.size();
   
   }
   
@@ -192,6 +173,29 @@ class MyPaths {
     
   }
   
+  void getBounds(PVector pix_min, PVector pix_max) {
+    PVector grid_min = new PVector();
+    PVector grid_max = new PVector();
+    grid_min.x = paths_list.get(0).get(0).x;
+    grid_max.x = paths_list.get(0).get(0).x;
+    grid_min.y = paths_list.get(0).get(0).y;
+    grid_max.y = paths_list.get(0).get(0).y;
+    for (LinkedList<PVector> path : paths_list) {
+       for (PVector p : path) {
+         if (p.x < grid_min.x)  grid_min.x = p.x; 
+         if (p.y < grid_min.y)  grid_min.y = p.y; 
+         if (p.x > grid_max.x)  grid_max.x = p.x; 
+         if (p.y > grid_max.y)  grid_max.y = p.y; 
+       }
+    }
+    PVector Smin = my_pitch.G2S(grid_min);
+    PVector Smax = my_pitch.G2S(grid_max);
+    pix_min.set(Smin);
+    pix_max.set(Smax);
+    
+    
+  }
+
   int getNoPaths()
   {
       return paths_list.size();

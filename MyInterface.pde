@@ -1,4 +1,7 @@
 
+
+
+
 color active_color = color(0);
 
 void mouseMoved() {
@@ -51,12 +54,21 @@ void keyPressed() {
   } else if (key == 'l') {
     println("loading");
     
-    File data_dir = new File(sketchPath() + "/data");
-    File[] json_files = data_dir.listFiles();
-    String[] json_array = Arrays.stream(json_files).map(Object::toString).toArray(String[]::new);
-    List json_list = Arrays.asList(json_array);
+    String selected_file = null;
+    if (true) {
+      File data_dir = new File(sketchPath() + "/data");
+      File[] json_files = data_dir.listFiles();
+      String[] json_array = Arrays.stream(json_files).map(Object::toString).toArray(String[]::new);
+      List json_list = Arrays.asList(json_array);
+      
+      selected_file = booster.showSelectionDialog("select a file", "Select a File", json_list);
+    } else {
+      
+      
+    }
+      
     
-    String selected_file = booster.showSelectionDialog("select a file", "Select a File", json_list);
+    
     if (selected_file != null) {
       plot_name = Paths.get(selected_file).getFileName().toString();
       int lastPeriodPos = plot_name.lastIndexOf('.');
@@ -156,8 +168,11 @@ void keyPressed() {
       triangle_fill_mode_on = !triangle_fill_mode_on;
   } else if (key == 'p') {
     MyPaths paths = new MyPaths(drawables);
+    PVector min = new PVector();
+    PVector max = new PVector();
+    paths.getBounds(min, max);
     
-    MySvg svg = new MySvg(width, height);
+    MySvg svg = new MySvg(min, max, A4_PORTRAIT_WIDTH, A4_PORTRAIT_HEIGHT);
     paths.draw(svg);
     svg.finalize();
     String filename = sketchPath() + "/svg/" + plot_name + ".svg";
@@ -170,7 +185,14 @@ void keyPressed() {
     my_pitch.invertXY = !my_pitch.invertXY;    
   } else if (key == 'q') {
     exit();
+  } else if (key == 'y') {
+    println("create offsetfield at " + mouseX + " " + mouseY);
+    my_pitch.addOffsetField(mouseX, mouseY);
+  } else if (key == 'u') {
+    println("remove offsetfield at " + mouseX + " " + mouseY);
+    my_pitch.removeOffsetField(mouseX, mouseY);
   }
+  
   
 }
 
