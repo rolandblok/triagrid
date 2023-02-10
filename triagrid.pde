@@ -73,6 +73,7 @@ void draw() {
       gp.draw();
     }
   }
+  
   for (MyElement e : drawables) {
     if ((e instanceof MyTriangle) && draw_fill) {
       e.draw();

@@ -26,11 +26,13 @@ class MyTriangle extends MyElement {
     ps.put(TSide.RIGHT, sort_list.get(2));
     
     hatch_density = 2;
+    c = color(255,55,55);
     PVector p0 = ps.get(TSide.MID).p;
     PVector p1 = ps.get(TSide.LEFT).p;
     PVector p2 = ps.get(TSide.RIGHT).p;  
 
     if (green(c_arg) < 255/3) {    
+      c = color(55,255,55);
       hatch_density = 4;
       if (ps.get(TSide.LEFT).p.y < ps.get(TSide.MID).p.y) {
         p0 = ps.get(TSide.LEFT).p;
@@ -42,6 +44,7 @@ class MyTriangle extends MyElement {
         p2 = ps.get(TSide.LEFT).p;        
       }
     } else if (green(c_arg) < 2*255/3) {
+      c = color(55,55,255);
       hatch_density = 7;
       if (ps.get(TSide.LEFT).p.y < ps.get(TSide.MID).p.y) {
         p0 = ps.get(TSide.RIGHT).p;
@@ -56,7 +59,7 @@ class MyTriangle extends MyElement {
     
     p = new PVector((p0.x + p1.x + p2.x)/3, (p0.y + p1.y + p2.y)/3);
 
-    c = c_arg;
+
     hatches = new Vector<MyLine>();
     for (int i = 1; i <= hatch_density; i++) {
       float l = i * 1.0 / hatch_density;
@@ -65,10 +68,16 @@ class MyTriangle extends MyElement {
       PVector pb= PVector.lerp(p0, p2, l);
       //PVector pa = PVector.add(p0, PVector.mult(PVector.sub(p1, p0), l));             
       //PVector pb = PVector.add(p0, PVector.mult(PVector.sub(p2, p0), l));   
-      MyLine hatch = new MyLine(new MyPoint(pa), new MyPoint(pb)); 
+      MyLine hatch = new MyLine(new MyPoint(pa), new MyPoint(pb), c); 
       hatches.add(hatch);
     }
 
+  }
+  String getStrColor() {
+    return "#"+Integer.toHexString( (int)red(c)) + Integer.toHexString( (int)green(c)) +Integer.toHexString( (int)blue(c));
+     //String.format("%02d", (int)red(c))  +
+     //String.format("%02d", (int)green(c)) +
+     //String.format("%02d", (int)blue(c))  ;
   }
   
   @Override
@@ -82,16 +91,16 @@ class MyTriangle extends MyElement {
   MyTriangle(MyPoint p1_arg, MyPoint p2_arg, MyPoint p3_arg) {
     this(p1_arg, p2_arg, p3_arg, color(0, 0, 0));
   }
-
   void draw() {
-    draw(c, 0);
+    draw(c, 1);
   }
   void draw(color c_arg, float weight) {
-    fill(c_arg);
+    stroke(c_arg);
     if (weight == 0) {
       noStroke();
     } else {
-      stroke(weight);
+      strokeWeight(weight);
+      
     }
     PVector sp1 = my_pitch.G2S(ps.get(TSide.LEFT).p);
     PVector sp2 = my_pitch.G2S(ps.get(TSide.MID).p);

@@ -58,6 +58,18 @@ class MySvg {
       __add_to_svg(ss);
   }
 
+  void start_layer(String c) {
+    String ss = "<g \n id='" + c + "'>\n";
+    
+    __add_to_svg(ss);
+    
+  }
+  void end_layer() {
+    String ss = "</g>\n";
+    
+    __add_to_svg(ss);
+  }
+
   void start_path(String c, int strokewidth, PVector point_arg)
   {
     PVector point = point_arg.copy();
