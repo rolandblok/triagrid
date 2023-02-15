@@ -171,12 +171,19 @@ void keyPressed() {
     PVector min = new PVector();
     PVector max = new PVector();
     paths.getBounds(min, max);
+
+    String filename = sketchPath() + "/gcode/" + plot_name;
+    
+    MyGCode gcode = new MyGCode(min, max, A4_PORTRAIT_WIDTH, A4_PORTRAIT_HEIGHT);
+    paths.draw(gcode);
+    gcode.finalize();
+    gcode.save(filename);
+
+    filename = sketchPath() + "/svg/" + plot_name;
     
     MySvg svg = new MySvg(min, max, A4_PORTRAIT_WIDTH, A4_PORTRAIT_HEIGHT);
     paths.draw(svg);
     svg.finalize();
-    String filename = sketchPath() + "/svg/" + plot_name + ".svg";
-    println("saving to : "+filename); 
     svg.save(filename);
 
     filename = sketchPath() + "/png/" + plot_name + ".png";

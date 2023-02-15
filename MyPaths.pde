@@ -217,7 +217,7 @@ class MyPaths {
   
   }
   
-  void draw(MySvg svg)
+  void draw(MyExporter svg)
   {
     //HashMap<String, LinkedList<   LinkedList<      PVector>>> layered_paths_list;
   
