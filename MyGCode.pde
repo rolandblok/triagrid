@@ -9,19 +9,16 @@ class MyGCode extends MyExporter{
   Vector<Vector<String>> layers_gcode_list;
   int     cur_layer;
   PVector pix_min;
-  PVector pix_max;
-  float mm_width;
-  float mm_height;
-  PVector padding;
   
-  float pix2mm ;
+  float pix2mm_scl ;
+  PVector pix_offset;
   PVector mm_offset;
   
   int draw_speed;
   int move_speed;
   
   private PVector pix2mm(PVector pix) {
-    PVector mm = PVector.add(PVector.mult(pix, pix2mm), mm_offset); 
+    PVector mm = PVector.mult(PVector.add(pix, pix_offset), pix2mm_scl).add(mm_offset); 
     
     return mm; 
   }
@@ -53,25 +50,44 @@ class MyGCode extends MyExporter{
     move_speed = 2000;
     draw_speed = 700;
     
-    this.pix_min = pix_min;
-    this.pix_max = pix_max;
-    this.mm_width = mm_width;
-    this.mm_height = mm_height;
-    this.padding = padding;
     
     layers_gcode_list = new Vector<Vector<String>>();
     cur_layer = -1;
+  
+    // start determine PIX2MM 
+    pix2mm_scl = 1.;
+    mm_offset = new PVector(0,0);
+    pix_offset = PVector.mult(pix_min, -1.);
 
-    PVector pix_size = PVector.sub(pix_max, pix_min);
-    float pix2mm_x = mm_width / pix_size.x;
-    float pix2mm_y = mm_height / pix_size.y;
-    if (pix2mm_x * mm_height > 1) {
-      pix2mm = pix2mm_y; 
+    // determine the scaling
+    PVector pix_size = pix2mm(pix_max); //<>//
+    float pix2mm_scl_x = mm_width / pix_size.x;
+    float pix2mm_scl_y = mm_height / pix_size.y;
+    if (pix2mm_scl_x * pix_size.y > mm_width) {
+      pix2mm_scl = pix2mm_scl_y; 
     } else {
-       pix2mm = pix2mm_x; 
+       pix2mm_scl = pix2mm_scl_x; 
     }
-    mm_offset = new PVector();
+    
+    // fraction to pad on the edge
+    float padding = 0.1;
+    pix2mm_scl = (1.0-padding) * pix2mm_scl;
 
+    
+    //determine the center offset : mm_offset
+    PVector paper_size = new PVector(mm_width, mm_height); //<>//
+    PVector mm_size = pix2mm(pix_max);
+    mm_offset = PVector.sub(paper_size, mm_size).mult(0.5);
+    
+
+/*   
+G1 F2000 x0 Y0
+G1 F700 X210 Y0
+G1 F700 X210 Y291
+G1 F700 X0   Y291
+G1 F700 X0   Y0
+M5
+*/
   }
 
 

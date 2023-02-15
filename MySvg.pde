@@ -5,11 +5,7 @@ import java.io.IOException;
 import java.util.*;
 
 
-float A4_PORTRAIT_WIDTH =  210.;
-float A4_PORTRAIT_HEIGHT = 297.;
-float A3_PORTRAIT_WIDTH =  297.;
-float A3_PORTRAIT_HEIGHT = 420.;
-float PADDING_FRAC       = 0.05;
+
 
 class MySvg extends MyExporter{
   Vector<String> svg_list;
