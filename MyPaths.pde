@@ -1,17 +1,74 @@
 import java.util.*;
 
 class MyPaths {
-  String c;
   int thickness;
-  LinkedList<LinkedList<PVector>> paths_list;
+  
+  // layers     1=set of paths  1=set of points  1=point
+  HashMap<String, LinkedList<   LinkedList<      PVector>>> layered_paths_list;
   float ACC = 0.01;
   
-  public MyPaths(Vector<MyElement> elements)
+  public MyPaths(Vector<MyElement> elements) {
+      
+      //////////////////
+      //create sets of elements that are one layer (based on same color and one for contour )
+      HashMap<String, Vector<MyLine>> layered_lines = new HashMap<String, Vector<MyLine>>();
+      Vector<MyLine> contour_layer = new Vector<MyLine>();
+      layered_lines.put("#000000", contour_layer);
+      //  parse elements
+      for(MyElement elem : elements) {
+        if (elem.getClass() == MyLine.class) {
+          contour_layer.add((MyLine) elem);          
+        } else if (elem.getClass() ==   MyTriangle.class) {
+          MyTriangle t = (MyTriangle) elem;
+          String c_str = t.getStrColor();
+          Vector<MyLine> hatch_layer = layered_lines.get(c_str);
+          if(hatch_layer == null){
+            hatch_layer = new Vector<MyLine>();
+            layered_lines.put(c_str, hatch_layer);
+          }
+          for (MyLine l : t.hatches) {
+            hatch_layer.add(l);
+          }
+        }
+      }
+      println("created " + layered_lines.size() + "  layers");
+      
+      ////////////////////
+      //filter out overlap with contour (only)
+      for (Map.Entry<String,  Vector<MyLine>> layer_set : layered_lines.entrySet()) {
+        Vector<MyLine> layer = layer_set.getValue();
+        if (layer != contour_layer) {
+
+          Iterator<MyLine> contour_it = contour_layer.iterator();
+          while (contour_it.hasNext()) {
+            MyLine contour_line = contour_it.next();
+            Iterator<MyLine> layer_it = layer.iterator();
+            while (layer_it.hasNext()) {
+              MyLine layer_line = layer_it.next();
+              if (layer_line.equals(contour_line)) {
+                layer_it.remove();
+              }
+            }
+          }
+        }
+      }
+      
+      //////////////
+      //create paths
+      layered_paths_list = new HashMap<String, LinkedList<LinkedList<PVector>>>();
+      for (Map.Entry<String,  Vector<MyLine>> layer_set : layered_lines.entrySet()) {
+         LinkedList<LinkedList<PVector>> paths_list = new LinkedList<LinkedList<PVector>>();
+         createPathsLayer(layer_set.getValue(), paths_list);
+         layered_paths_list.put(layer_set.getKey(), paths_list);
+      }
+      
+  }
+  
+  
+  void createPathsLayer(Vector<MyLine> elements, LinkedList<LinkedList<PVector>> paths_list)
   {
       // initialise variables. Will be overwritten by first line.
-      c = "#000000";
       thickness = 1;
-      paths_list = new LinkedList<LinkedList<PVector>>();
       
       LinkedList<MyLine> visible_lines = new LinkedList<MyLine>();
       for (MyElement elem : elements) {
@@ -127,7 +184,7 @@ class MyPaths {
         }
           
       }
-      println(" number of paths " + getNoPaths() );
+      println(" number of paths " + getNoPaths(paths_list) );
       
   
       return;
@@ -160,34 +217,50 @@ class MyPaths {
   
   }
   
-  void draw(MySvg svg)
+  void draw(MyExporter svg)
   {
-      for (LinkedList<PVector> path : paths_list) {
+    //HashMap<String, LinkedList<   LinkedList<      PVector>>> layered_paths_list;
+  
+    for (Map.Entry<String,  LinkedList<LinkedList<PVector>>> layer_paths : layered_paths_list.entrySet()) {
+       String c_str =  layer_paths.getKey();
+       LinkedList<LinkedList<PVector>> paths_list = layer_paths.getValue();
+       svg.start_layer(c_str);
+       for (LinkedList<PVector> path : paths_list) { 
          Iterator<PVector> vec_it = path.iterator();
-         svg.start_path(c, thickness,  my_pitch.G2S(vec_it.next()));
+         svg.start_path(c_str, thickness,  my_pitch.G2S(vec_it.next()));
          while (vec_it.hasNext()) {
            svg.add_path( my_pitch.G2S(vec_it.next()));
          }
          svg.end_path();
-      }
+       }
+       svg.end_layer();
+    }
     
   }
   
   void getBounds(PVector pix_min, PVector pix_max) {
-    PVector grid_min = new PVector();
-    PVector grid_max = new PVector();
-    grid_min.x = paths_list.get(0).get(0).x;
-    grid_max.x = paths_list.get(0).get(0).x;
-    grid_min.y = paths_list.get(0).get(0).y;
-    grid_max.y = paths_list.get(0).get(0).y;
-    for (LinkedList<PVector> path : paths_list) {
-       for (PVector p : path) {
-         if (p.x < grid_min.x)  grid_min.x = p.x; 
-         if (p.y < grid_min.y)  grid_min.y = p.y; 
-         if (p.x > grid_max.x)  grid_max.x = p.x; 
-         if (p.y > grid_max.y)  grid_max.y = p.y; 
-       }
+    PVector grid_min = null;
+    PVector grid_max = null;
+    for (Map.Entry<String,  LinkedList<LinkedList<PVector>>> layer_paths : layered_paths_list.entrySet()) {
+      LinkedList<LinkedList<PVector>> paths_list = layer_paths.getValue();
+      if (grid_min == null) {
+        grid_min = new PVector();
+        grid_max = new PVector();
+        grid_min.x = paths_list.get(0).get(0).x;
+        grid_max.x = paths_list.get(0).get(0).x;
+        grid_min.y = paths_list.get(0).get(0).y;
+        grid_max.y = paths_list.get(0).get(0).y;
+      }
+      for (LinkedList<PVector> path : paths_list) {
+         for (PVector p : path) {
+           if (p.x < grid_min.x)  grid_min.x = p.x; 
+           if (p.y < grid_min.y)  grid_min.y = p.y; 
+           if (p.x > grid_max.x)  grid_max.x = p.x; 
+           if (p.y > grid_max.y)  grid_max.y = p.y; 
+         }
+      }
     }
+    
     PVector Smin = my_pitch.G2S(grid_min);
     PVector Smax = my_pitch.G2S(grid_max);
     pix_min.set(Smin);
@@ -196,12 +269,12 @@ class MyPaths {
     
   }
 
-  int getNoPaths()
+  int getNoPaths( LinkedList<LinkedList<PVector>> paths_list)
   {
       return paths_list.size();
   }
   
-  int getNoLines()
+  int getNoLines( LinkedList<LinkedList<PVector>> paths_list)
   {
       int no_lines = 0;
       for (LinkedList<PVector> path : paths_list) {

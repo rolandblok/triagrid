@@ -5059,22 +5059,6 @@
     {
       "p1": {
         "color": -16777216,
-        "x": 29.5,
-        "y": 29,
-        "type": "point"
-      },
-      "p2": {
-        "color": -16777216,
-        "x": 30.5,
-        "y": 29,
-        "type": "point"
-      },
-      "color": -16777216,
-      "type": "line"
-    },
-    {
-      "p1": {
-        "color": -16777216,
         "x": 28,
         "y": 26,
         "type": "point"
@@ -18442,7 +18426,7 @@
     }
   ],
   "my_pitch": {
-    "screen_scale": 29.700000762939453,
+    "screen_scale": 30,
     "type": "MyPitch"
   }
 }

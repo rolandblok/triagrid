@@ -4,13 +4,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
-float A4_PORTRAIT_WIDTH =  210.;
-float A4_PORTRAIT_HEIGHT = 297.;
-float A3_PORTRAIT_WIDTH =  297.;
-float A3_PORTRAIT_HEIGHT = 420.;
-float PADDING_FRAC       = 0.05;
 
-class MySvg {
+
+
+class MySvg extends MyExporter{
   Vector<String> svg_list;
 
   public MySvg(PVector pix_min, PVector pix_max, float mm_width, float mm_height) {
@@ -39,23 +36,18 @@ class MySvg {
       String s = "</svg>";
       __add_to_svg(s);
   }
-  void _place(PVector p) {
-      
+
+
+  void start_layer(String c) {
+    String ss = "<g \n id='" + c + "'>\n";
+    
+    __add_to_svg(ss);
+    
   }
-
-
-  void line(String c, int strokewidth, PVector p1_arg, PVector p2_arg) {
-  
-      PVector p1 = p1_arg.copy();
-      PVector p2 = p2_arg.copy();
-      //"""
-      //    Adds a line using the method's arguments.
-      //    """
-      _place(p1);
-      _place(p2);
-      
-      String ss = "    <line stroke='" + c + "' stroke-width='" + strokewidth + "px' y2='" + p2.y + "' x2='" + p2.x + "' y1='" + p1.y + "' x1='" + p1.x + "' />\n";
-      __add_to_svg(ss);
+  void end_layer() {
+    String ss = "</g>\n";
+    
+    __add_to_svg(ss);
   }
 
   void start_path(String c, int strokewidth, PVector point_arg)
@@ -65,7 +57,6 @@ class MySvg {
       ss += "<path fill='none' stroke='" + c + "' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''\n";
       ss += "d= '";
       ss += "M";
-      _place(point);
       ss += point.x + " " + point.y + " \n";
       __add_to_svg(ss);
   }
@@ -74,7 +65,6 @@ class MySvg {
   {
     PVector point = point_arg.copy();
       String ss = "L";
-      _place(point);
       ss += point.x + " " + point.y + " \n";
       __add_to_svg(ss);
   }
@@ -87,7 +77,8 @@ class MySvg {
 
   void save(String path_str) {
     
-    File file = new File(path_str);
+    File file = new File(path_str+".svg");
+    println("saving to : "+file); 
     try {
       FileWriter wr = new FileWriter(file);
       for (String s : svg_list) {
