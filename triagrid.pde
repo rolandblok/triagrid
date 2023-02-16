@@ -6,6 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
  
 
+
 //https://milchreis.github.io/uibooster-for-processing/reference/uibooster/UiBooster.html
 UiBooster booster;
 
@@ -15,8 +16,8 @@ boolean draw_lines;
 boolean draw_grid;
 
 
-int X_GRID = 100;
-int Y_GRID = 100;
+int X_GRID = 150;
+int Y_GRID = 150;
 Vector<MyPoint> grid;
 Vector<MyElement> drawables;
 
@@ -24,16 +25,13 @@ String plot_name = "triagrid";
 
 MyPoint closest_point = null;
 MyElement possible_new_element = null;
-boolean triangle_fill_mode_on = false;
 
 
 MyPitch my_pitch;
 
-
 void createGrid() {
   println("createGrid");
   grid = new Vector<MyPoint>();
-  my_pitch = new MyPitch(30);
 
   for (int y = 0;  y < Y_GRID; y++) {
     float offset = 0;
@@ -53,10 +51,13 @@ void setup() {
   size(1400, 1400);
   surface.setTitle(plot_name);
   
+  Locale.setDefault(Locale.US);
+  
   draw_fill = true;
   draw_lines = true;
   draw_grid = true;
   
+  my_pitch = new MyPitch(30);
   createGrid();
   drawables = new Vector<MyElement>();
 

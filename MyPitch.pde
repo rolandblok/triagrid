@@ -84,16 +84,47 @@ class MyPitch {
     JSONObject json = new JSONObject();
     json.setString("type", "MyPitch");
     json.setFloat("screen_scale", screen_scale);
+    json.setBoolean("invertxy", invertXY);
+    JSONArray offset_fields_json = new JSONArray();
+    json.setJSONArray("my_offset_fields", offset_fields_json);
+    
+    Enumeration<MyOffsetField> mof_e= my_offset_fields.elements();
+    int i = 0;
+    while (mof_e.hasMoreElements()) {
+       MyOffsetField mof = mof_e.nextElement();
+       offset_fields_json.setJSONObject(i, mof.getJSON());
+       i++;
+     }
     
     return json;
   }
   
   MyPitch(JSONObject json) {
     if (json.getString("type").equals("MyPitch")) {
-      
+      println("load my pitch from json");
+      try {
+        invertXY = json.getBoolean("invertXY");
+      } catch (Exception e) {
+        invertXY = false;
+      }
       float _screen_scale = json.getFloat("screen_scale");
       screen_scale =_screen_scale;
       recalc_grid();
+
+      my_offset_fields = new Hashtable<PVector,MyOffsetField>();
+      try {
+        JSONArray offset_fields_json = json.getJSONArray("my_offset_fields");
+        for (int i = 0; i < offset_fields_json.size(); i++) {
+          JSONObject offset_field_json = offset_fields_json.getJSONObject(i);
+          MyOffsetField mof = new MyOffsetField(offset_field_json);
+          my_offset_fields.put(mof.origin, mof);
+        }
+      } catch (Exception e) {
+        println("failed load offset fields. Probably old file " + e);
+      }
+
+
+
     }
   }
   

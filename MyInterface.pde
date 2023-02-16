@@ -1,6 +1,7 @@
 
 
-
+boolean triangle_fill_mode_on = false;
+boolean move_mode_on = false;
 
 color active_color = color(0);
 
@@ -22,6 +23,30 @@ void mousePressed() {
     }
   } 
 }
+
+String KEY_MANUAL = " " + 
+  " s : save json \n" +
+  " l : load json \n" + 
+  " t : toggle line / hatching(triangle) mode \n"  +
+  "   in TRIANGLE mode: " +
+  "     f :  flood fill hatching \n"+ 
+  "     g : flood erase hatching \n"+ 
+  "     123 : hatching  \n"+
+  "   in LINE mode : \n" +
+  "     1234546789 : draw line in numbered direction \n" +
+  " m : toggle drawing move mode \n" +
+  "     1234546789 : move the drawing \n" +
+  " y/u : create / removedistortion field " + 
+  " z : toggle draw grid "+ 
+  " x : toggle draw lines "+ 
+  " c : toggle draw hatches "+ 
+  " -= : scale "+ 
+  " [] : aspect " +
+  " p : print to svg and gcode " +
+  " C : clear hatching "+ 
+  " n : NEW ";
+
+
 
 void keyPressed() {
   println("key : " + key);
@@ -62,12 +87,7 @@ void keyPressed() {
       List json_list = Arrays.asList(json_array);
       
       selected_file = booster.showSelectionDialog("select a file", "Select a File", json_list);
-    } else {
-      
-      
-    }
-      
-    
+    } 
     
     if (selected_file != null) {
       plot_name = Paths.get(selected_file).getFileName().toString();
@@ -96,6 +116,8 @@ void keyPressed() {
       createGrid();
     }
     
+  } else if (key == 't') {
+      triangle_fill_mode_on = !triangle_fill_mode_on;
   } else if (key == 'f') {
     if (MyTriangle.class == possible_new_element.getClass()) {
       println("add0");
@@ -107,6 +129,26 @@ void keyPressed() {
       println("remove");
       floodClear((MyTriangle)possible_new_element);
     }
+    
+  } else if (key == 'm') {
+    move_mode_on = !move_mode_on;
+    println("MOVE MODE " + (move_mode_on?"ON " : "OFF"));
+  } else if (move_mode_on && (key == '1')) {
+    moveElements(-1.0,  1.0);
+  } else if (move_mode_on && (key == '2')) {
+    moveElements( 0.0,  2.0);
+  } else if (move_mode_on && (key == '3')) {
+    moveElements( 1.0,  1.0);
+  } else if (move_mode_on && (key == '6')) {
+    moveElements( 2.0,  0.0);
+  } else if (move_mode_on && (key == '9')) {
+    moveElements( 1.0, -1.0);
+  } else if (move_mode_on && (key == '8')) {
+    moveElements( 0.0, -2.0);
+  } else if (move_mode_on && (key == '7')) {
+    moveElements(-1.0, -1.0);
+  } else if (move_mode_on && (key == '4')) {
+    moveElements(-2.0,  0.0);
     
   } else if ((triangle_fill_mode_on) && ((key == '1') || (key == '2') || (key == '3'))) {
     if (key == '1') {
@@ -133,6 +175,7 @@ void keyPressed() {
   } else if (!triangle_fill_mode_on && (key == '4')) {
     addRemLineToClosePoint(-2.0,  0.0);
   } else if (key == 'n') {
+    my_pitch = new MyPitch(30);
     createGrid();
     plot_name = "triagrid";
     surface.setTitle(plot_name);
@@ -164,9 +207,30 @@ void keyPressed() {
   }  else if (key == ']') {
       my_pitch.Y_GROUND_PITCH = 1.1*my_pitch.Y_GROUND_PITCH;
       my_pitch.recalc_grid();
-  } else if (key == 't') {
-      triangle_fill_mode_on = !triangle_fill_mode_on;
   } else if (key == 'p') {
+    
+    String selection = new UiBooster().showSelectionDialog(
+        "Select Format",
+        "Format?",
+        Arrays.asList("A4 PORTRAIT", "A4 LANDSCAPE", "A3 PORTRAIT", "A3 LANDSCAPE"));
+        
+    float p_w = A4_PORTRAIT_WIDTH;
+    float p_h = A4_PORTRAIT_HEIGHT;
+    println("selection " + selection);
+    if (selection == "A4 PORTRAIT") {
+      p_w = A4_PORTRAIT_WIDTH;
+      p_h = A4_PORTRAIT_HEIGHT;
+    } else if (selection == "A4 LANDSCAPE") {
+      p_w = A4_PORTRAIT_HEIGHT;
+      p_h = A4_PORTRAIT_WIDTH;
+    } else if (selection == "A3 PORTRAIT") {
+      p_w = A3_PORTRAIT_WIDTH;
+      p_h = A3_PORTRAIT_HEIGHT;
+    } else if (selection == "A3 LANDSCAPE") {
+      p_w = A3_PORTRAIT_HEIGHT;
+      p_h = A3_PORTRAIT_WIDTH;
+    }
+    
     MyPaths paths = new MyPaths(drawables);
     PVector min = new PVector();
     PVector max = new PVector();
@@ -174,14 +238,14 @@ void keyPressed() {
 
     String filename = sketchPath() + "/gcode/" + plot_name;
     
-    MyGCode gcode = new MyGCode(min, max, A4_PORTRAIT_WIDTH, A4_PORTRAIT_HEIGHT);
+    MyGCode gcode = new MyGCode(min, max, p_w, p_h);
     paths.draw(gcode);
     gcode.finalize();
     gcode.save(filename);
 
     filename = sketchPath() + "/svg/" + plot_name;
     
-    MySvg svg = new MySvg(min, max, A4_PORTRAIT_WIDTH, A4_PORTRAIT_HEIGHT);
+    MySvg svg = new MySvg(min, max, p_w, p_h);
     paths.draw(svg);
     svg.finalize();
     svg.save(filename);
@@ -203,7 +267,7 @@ void keyPressed() {
   
 }
 
-void addRemLineToClosePoint(float x_dir, float y_dir) {
+PVector dir2Offset(float x_dir, float y_dir) {
     if (my_pitch.invertXY) {
       float xdir_t = x_dir;
       x_dir = y_dir; 
@@ -211,7 +275,12 @@ void addRemLineToClosePoint(float x_dir, float y_dir) {
     }
     float dx = x_dir * 0.5;
     float dy = y_dir * 1.0;
-    MyPoint np = new MyPoint(closest_point.p.x+dx, closest_point.p.y+dy);
+    return new PVector(dx, dy);
+}
+
+void addRemLineToClosePoint(float x_dir, float y_dir) {
+  PVector d = dir2Offset(x_dir, y_dir);
+    MyPoint np = new MyPoint(closest_point.p.x+d.x, closest_point.p.y+d.y);
     MyLine l = new MyLine(closest_point, np);
     add_rem_elem(l);
     closest_point = closest(np.p, false);
@@ -353,4 +422,10 @@ void addElem(Vector<MyElement> e_list, MyElement e) {
       e_list.remove(check_elem);
     }
     e_list.add(e);
+}
+void moveElements(float dx, float dy) {
+    PVector d = dir2Offset(dx, dy);
+    for (MyElement e : drawables) {
+      e.move(d);
+    }
 }

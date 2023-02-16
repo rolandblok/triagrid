@@ -23,6 +23,10 @@ class MyPoint extends MyElement {
     this(x_arg,  y_arg,  color(0,0,0));
   }
   
+  void move(PVector d) {
+    super.move(d);    
+  }
+  
   @Override
   public String toString(){
     return "MyPoint p" + p; 

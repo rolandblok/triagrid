@@ -6,6 +6,7 @@ class MyOffsetField {
   long seed_x, seed_y;
   float[] offsets_x;
   float[] offsets_y;
+    public static final String my_type =  "offset_field"; 
   
   private int index(int x, int y) {
     return x*width + y;
@@ -68,6 +69,33 @@ class MyOffsetField {
     float offset =off*(exp(-1.0*gauss_scale*c.x*c.x)*exp(-1.0*gauss_scale*c.y*c.y));
     
     return offset;
+  }
+  
+  JSONObject getJSON(){
+
+    JSONObject json = new JSONObject();
+    json.setString("type", my_type);
+    json.setFloat("origin_x", origin.x);
+    json.setFloat("origin_y", origin.y);
+    json.setFloat("offset_scale", offset_scale);
+    json.setFloat("noise_scale", noise_scale);
+    json.setFloat("gauss_scale", gauss_scale);
+        
+    return json;
+  }
+  
+  MyOffsetField(JSONObject json) {
+    if (json.getString("type").equals(MyOffsetField.my_type)) {
+      println("load my pitch from json");
+      float _x = json.getFloat("origin_x");
+      float _y = json.getFloat("origin_y");
+      float offset_scale = json.getFloat("offset_scale");
+      float noise_scale = json.getFloat("noise_scale");
+      float gauss_scale = json.getFloat("gauss_scale");
+      createMe(new PVector(_x, _y), offset_scale, noise_scale, gauss_scale);
+    } else {
+      println("fail offsetfield json load" + json.getString("type"));
+    }
   }
   
 }

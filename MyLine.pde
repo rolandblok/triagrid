@@ -24,6 +24,14 @@ class MyLine extends MyElement {
   public String toString(){
     return "MyLine p1:" + ps[0] + " ;p2:" + ps[1]; 
   }
+  
+  void move(PVector d) {
+    super.move(d);
+    for(MyPoint p : ps) {
+      p.move(d);
+    }
+    
+  }
 
   void reverse() {
      MyPoint p_temp = ps[0];

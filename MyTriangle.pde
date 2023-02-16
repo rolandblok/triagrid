@@ -80,6 +80,18 @@ class MyTriangle extends MyElement {
      //String.format("%02d", (int)blue(c))  ;
   }
   
+  void move(PVector d) {
+    super.move(d);
+
+    // using for-each loop for iteration over Map.entrySet()
+    for (Map.Entry<TSide,MyPoint> p_entry : ps.entrySet()) {
+      p_entry.getValue().move(d);
+    }
+    for (MyLine hatch : hatches) {
+      hatch.move(d);
+    }
+  }
+  
   @Override
   public String toString(){
     return "MyTriangle pl:" + ps.get(TSide.LEFT).p + " ;pm:" + ps.get(TSide.MID).p + " ;pr:" +ps.get(TSide.RIGHT).p; 

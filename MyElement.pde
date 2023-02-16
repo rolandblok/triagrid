@@ -7,6 +7,10 @@ abstract class  MyElement{
   public abstract void draw(color c, float weight);
   public abstract JSONObject getJSON();
   
+  public void move(PVector d) {
+    p.add(d);
+  }
+  
   public PVector getSP(){
     return( my_pitch.G2S(p));
   }
