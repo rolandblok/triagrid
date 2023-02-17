@@ -213,22 +213,27 @@ void keyPressed() {
         "Select Format",
         "Format?",
         Arrays.asList("A4 PORTRAIT", "A4 LANDSCAPE", "A3 PORTRAIT", "A3 LANDSCAPE"));
-        
+    
+    String name_ext = "A4POR";
     float p_w = A4_PORTRAIT_WIDTH;
     float p_h = A4_PORTRAIT_HEIGHT;
     println("selection " + selection);
     if (selection == "A4 PORTRAIT") {
       p_w = A4_PORTRAIT_WIDTH;
       p_h = A4_PORTRAIT_HEIGHT;
+      name_ext = ".A4POR";
     } else if (selection == "A4 LANDSCAPE") {
       p_w = A4_PORTRAIT_HEIGHT;
       p_h = A4_PORTRAIT_WIDTH;
+      name_ext = ".A4LAN";
     } else if (selection == "A3 PORTRAIT") {
       p_w = A3_PORTRAIT_WIDTH;
       p_h = A3_PORTRAIT_HEIGHT;
+      name_ext = ".A3POR";
     } else if (selection == "A3 LANDSCAPE") {
       p_w = A3_PORTRAIT_HEIGHT;
       p_h = A3_PORTRAIT_WIDTH;
+      name_ext = ".A3LAN";
     }
     
     MyPaths paths = new MyPaths(drawables);
@@ -236,14 +241,14 @@ void keyPressed() {
     PVector max = new PVector();
     paths.getBounds(min, max);
 
-    String filename = sketchPath() + "/gcode/" + plot_name;
+    String filename = sketchPath() + "/gcode/" + plot_name + name_ext;
     
     MyGCode gcode = new MyGCode(min, max, p_w, p_h);
     paths.draw(gcode);
     gcode.finalize();
     gcode.save(filename);
 
-    filename = sketchPath() + "/svg/" + plot_name;
+    filename = sketchPath() + "/svg/" + plot_name + name_ext;
     
     MySvg svg = new MySvg(min, max, p_w, p_h);
     paths.draw(svg);

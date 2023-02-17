@@ -34,7 +34,7 @@ class MyTriangle extends MyElement {
 
     if (green(c_arg) < 255/3) {    
       hc = color(55,255,55);
-      hatch_density = 4;
+      hatch_density = 3;
       if (ps.get(TSide.LEFT).p.y < ps.get(TSide.MID).p.y) {
         p0 = ps.get(TSide.LEFT).p;
         p1 = ps.get(TSide.MID).p;
@@ -46,7 +46,7 @@ class MyTriangle extends MyElement {
       }
     } else if (green(c_arg) < 2*255/3) {
       hc = color(55,55,255);
-      hatch_density = 6;
+      hatch_density = 4;
       if (ps.get(TSide.LEFT).p.y < ps.get(TSide.MID).p.y) {
         p0 = ps.get(TSide.RIGHT).p;
         p1 = ps.get(TSide.MID).p;

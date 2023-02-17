@@ -137,7 +137,7 @@ M5
     
     for (int i = 0; i < layers_gcode_list.size(); i++) {
       Vector<String> gcode_list = layers_gcode_list.get(i);
-      String fn = String.format("%s%02d.gcode", path_str, i);
+      String fn = String.format(".L%s%02d.gcode", path_str, i);
       println("saving to : "+fn); 
 
       File file = new File(fn);
