@@ -63,11 +63,13 @@ class MyGCode extends MyExporter{
     PVector pix_size = pix2mm(pix_max); //<>//
     float pix2mm_scl_x = mm_width / pix_size.x;
     float pix2mm_scl_y = mm_height / pix_size.y;
-    if (pix2mm_scl_x * pix_size.y > mm_width) {
-      pix2mm_scl = pix2mm_scl_y; 
+    if (pix2mm_scl_y * pix_size.x > mm_width) {
+      pix2mm_scl = pix2mm_scl_x; 
     } else {
-       pix2mm_scl = pix2mm_scl_x; 
+       pix2mm_scl = pix2mm_scl_y; 
     }
+    println(" pix_min " + pix_min + " pix_max " + pix_max);
+    println(" pix2mm_scl * pix_size " + PVector.mult(pix_size, pix2mm_scl));
     
     // fraction to pad on the edge
     float padding = 0.1;
@@ -76,6 +78,7 @@ class MyGCode extends MyExporter{
     
     //determine the center offset : mm_offset
     PVector paper_size = new PVector(mm_width, mm_height); //<>//
+    println(" paper_size " + paper_size);
     PVector mm_size = pix2mm(pix_max);
     mm_offset = PVector.sub(paper_size, mm_size).mult(0.5);
     

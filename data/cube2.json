@@ -4403,8 +4403,13 @@
         "y": 12,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4425,8 +4430,13 @@
         "y": 11,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4447,8 +4457,13 @@
         "y": 11,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4469,8 +4484,13 @@
         "y": 10,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4491,8 +4511,13 @@
         "y": 10,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4513,8 +4538,13 @@
         "y": 9,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4535,8 +4565,13 @@
         "y": 9,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4557,8 +4592,13 @@
         "y": 8,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4579,8 +4619,13 @@
         "y": 9,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4601,8 +4646,13 @@
         "y": 8,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4623,8 +4673,13 @@
         "y": 9,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4645,8 +4700,13 @@
         "y": 8,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4667,8 +4727,13 @@
         "y": 9,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4689,8 +4754,13 @@
         "y": 8,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4711,8 +4781,13 @@
         "y": 9,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4733,8 +4808,13 @@
         "y": 8,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4755,8 +4835,13 @@
         "y": 9,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4777,8 +4862,13 @@
         "y": 8,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4799,8 +4889,13 @@
         "y": 9,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4821,8 +4916,13 @@
         "y": 8,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4843,8 +4943,13 @@
         "y": 9,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4865,8 +4970,13 @@
         "y": 8,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4887,8 +4997,13 @@
         "y": 9,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4909,8 +5024,13 @@
         "y": 8,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4931,8 +5051,13 @@
         "y": 9,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4953,8 +5078,13 @@
         "y": 8,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4975,8 +5105,13 @@
         "y": 9,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -4997,8 +5132,13 @@
         "y": 8,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5019,8 +5159,13 @@
         "y": 9,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5041,8 +5186,13 @@
         "y": 8,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5063,8 +5213,13 @@
         "y": 9,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5085,8 +5240,13 @@
         "y": 10,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5107,8 +5267,13 @@
         "y": 10,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5129,8 +5294,13 @@
         "y": 11,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5151,8 +5321,13 @@
         "y": 11,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5173,8 +5348,13 @@
         "y": 12,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5195,8 +5375,13 @@
         "y": 12,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5217,8 +5402,13 @@
         "y": 13,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5239,8 +5429,13 @@
         "y": 13,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5261,8 +5456,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5283,8 +5483,13 @@
         "y": 12,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5305,8 +5510,13 @@
         "y": 13,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5327,8 +5537,13 @@
         "y": 13,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5349,8 +5564,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5371,8 +5591,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5393,8 +5618,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5415,8 +5645,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5437,8 +5672,13 @@
         "y": 16,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5459,8 +5699,13 @@
         "y": 16,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5481,8 +5726,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5503,8 +5753,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5525,8 +5780,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5547,8 +5807,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5569,8 +5834,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5591,8 +5861,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5613,8 +5888,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5635,8 +5915,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5657,8 +5942,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5679,8 +5969,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5701,8 +5996,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5723,8 +6023,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5745,8 +6050,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5767,8 +6077,13 @@
         "y": 23,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5789,8 +6104,13 @@
         "y": 24,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5811,8 +6131,13 @@
         "y": 23,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5833,8 +6158,13 @@
         "y": 24,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5855,8 +6185,13 @@
         "y": 23,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5877,8 +6212,13 @@
         "y": 24,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5899,8 +6239,13 @@
         "y": 23,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5921,8 +6266,13 @@
         "y": 24,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5943,8 +6293,13 @@
         "y": 24,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5965,8 +6320,13 @@
         "y": 23,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -5987,8 +6347,13 @@
         "y": 24,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6009,8 +6374,13 @@
         "y": 23,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6031,8 +6401,13 @@
         "y": 24,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6053,8 +6428,13 @@
         "y": 23,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6075,8 +6455,13 @@
         "y": 24,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6097,8 +6482,13 @@
         "y": 23,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6119,8 +6509,13 @@
         "y": 24,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6141,8 +6536,13 @@
         "y": 23,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6163,8 +6563,13 @@
         "y": 24,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6217,8 +6622,13 @@
         "y": 16,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6239,8 +6649,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6261,8 +6676,13 @@
         "y": 16,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6283,8 +6703,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6305,8 +6730,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6327,8 +6757,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6349,8 +6784,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6371,8 +6811,13 @@
         "y": 19,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6393,8 +6838,13 @@
         "y": 19,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6415,8 +6865,13 @@
         "y": 20,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6437,8 +6892,13 @@
         "y": 20,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6459,8 +6919,13 @@
         "y": 21,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6481,8 +6946,13 @@
         "y": 21,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6503,8 +6973,13 @@
         "y": 22,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6525,8 +7000,13 @@
         "y": 22,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6547,8 +7027,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6569,8 +7054,13 @@
         "y": 16,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6591,8 +7081,13 @@
         "y": 16,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6613,8 +7108,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6635,8 +7135,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6657,8 +7162,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6679,8 +7189,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6701,8 +7216,13 @@
         "y": 19,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6723,8 +7243,13 @@
         "y": 19,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6745,8 +7270,13 @@
         "y": 20,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6767,8 +7297,13 @@
         "y": 20,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6789,8 +7324,13 @@
         "y": 21,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6811,8 +7351,13 @@
         "y": 21,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6833,8 +7378,13 @@
         "y": 22,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6855,8 +7405,13 @@
         "y": 22,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6877,8 +7432,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6899,8 +7459,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6921,8 +7486,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6943,8 +7513,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6965,8 +7540,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -6987,8 +7567,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7009,8 +7594,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7031,8 +7621,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7053,8 +7648,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7075,8 +7675,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7097,8 +7702,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7119,8 +7729,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7141,8 +7756,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7163,8 +7783,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7185,8 +7810,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7207,8 +7837,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7229,8 +7864,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7251,8 +7891,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7273,8 +7918,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7295,8 +7945,13 @@
         "y": 12,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7317,8 +7972,13 @@
         "y": 11,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7339,8 +7999,13 @@
         "y": 11,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7361,8 +8026,13 @@
         "y": 10,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7383,8 +8053,13 @@
         "y": 12,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7405,8 +8080,13 @@
         "y": 13,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7427,8 +8107,13 @@
         "y": 13,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7449,8 +8134,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7471,8 +8161,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7493,8 +8188,13 @@
         "y": 10,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7515,8 +8215,13 @@
         "y": 9,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7537,8 +8242,13 @@
         "y": 10,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7559,8 +8269,13 @@
         "y": 10,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7581,8 +8296,13 @@
         "y": 11,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7603,8 +8323,13 @@
         "y": 11,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7625,8 +8350,13 @@
         "y": 12,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7647,8 +8377,13 @@
         "y": 12,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7669,8 +8404,13 @@
         "y": 13,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7691,8 +8431,13 @@
         "y": 13,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7713,8 +8458,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7735,8 +8485,13 @@
         "y": 9,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7757,8 +8512,13 @@
         "y": 10,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7779,8 +8539,13 @@
         "y": 11,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7801,8 +8566,13 @@
         "y": 11,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7823,8 +8593,13 @@
         "y": 12,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7845,8 +8620,13 @@
         "y": 12,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7867,8 +8647,13 @@
         "y": 13,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7889,8 +8674,13 @@
         "y": 13,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7911,8 +8701,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7933,8 +8728,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7955,8 +8755,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7977,8 +8782,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -7999,8 +8809,13 @@
         "y": 16,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8021,8 +8836,13 @@
         "y": 16,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8043,8 +8863,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8065,8 +8890,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8087,8 +8917,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8109,8 +8944,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8131,8 +8971,13 @@
         "y": 19,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8153,8 +8998,13 @@
         "y": 19,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8175,8 +9025,13 @@
         "y": 20,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8197,8 +9052,13 @@
         "y": 20,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8219,8 +9079,13 @@
         "y": 21,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8241,8 +9106,13 @@
         "y": 21,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8263,8 +9133,13 @@
         "y": 22,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8285,8 +9160,13 @@
         "y": 22,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8307,8 +9187,13 @@
         "y": 23,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8329,8 +9214,13 @@
         "y": 23,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8351,8 +9241,13 @@
         "y": 24,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8373,8 +9268,13 @@
         "y": 23,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8395,8 +9295,13 @@
         "y": 23,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8417,8 +9322,13 @@
         "y": 22,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8439,8 +9349,13 @@
         "y": 22,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8461,8 +9376,13 @@
         "y": 21,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8483,8 +9403,13 @@
         "y": 21,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8505,8 +9430,13 @@
         "y": 20,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8527,8 +9457,13 @@
         "y": 20,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8549,8 +9484,13 @@
         "y": 19,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8571,8 +9511,13 @@
         "y": 19,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8593,8 +9538,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8615,8 +9565,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8637,8 +9592,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8659,8 +9619,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8681,8 +9646,13 @@
         "y": 16,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8703,8 +9673,13 @@
         "y": 24,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8725,8 +9700,13 @@
         "y": 20,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8747,8 +9727,13 @@
         "y": 19,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8769,8 +9754,13 @@
         "y": 20,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8791,8 +9781,13 @@
         "y": 21,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8813,8 +9808,13 @@
         "y": 21,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8835,8 +9835,13 @@
         "y": 22,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8857,8 +9862,13 @@
         "y": 22,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8879,8 +9889,13 @@
         "y": 23,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8901,8 +9916,13 @@
         "y": 23,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8923,8 +9943,13 @@
         "y": 16,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8945,8 +9970,13 @@
         "y": 16,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8967,8 +9997,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -8989,8 +10024,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9011,8 +10051,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9033,8 +10078,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9055,8 +10105,13 @@
         "y": 19,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9077,8 +10132,13 @@
         "y": 19,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9099,8 +10159,13 @@
         "y": 20,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9121,8 +10186,13 @@
         "y": 20,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9143,8 +10213,13 @@
         "y": 21,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9165,8 +10240,13 @@
         "y": 21,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9187,8 +10267,13 @@
         "y": 22,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9209,8 +10294,13 @@
         "y": 22,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9231,8 +10321,13 @@
         "y": 23,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9253,8 +10348,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9275,8 +10375,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9297,8 +10402,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9319,8 +10429,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9341,8 +10456,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9363,8 +10483,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9385,8 +10510,13 @@
         "y": 18,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9407,8 +10537,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9429,8 +10564,13 @@
         "y": 17,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9451,8 +10591,13 @@
         "y": 16,
         "type": "point"
       },
-      "color": -13487566,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9473,8 +10618,13 @@
         "y": 11,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9495,8 +10645,13 @@
         "y": 10,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9517,8 +10672,13 @@
         "y": 10,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9539,8 +10699,13 @@
         "y": 11,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9561,8 +10726,13 @@
         "y": 12,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9583,8 +10753,13 @@
         "y": 12,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9605,8 +10780,13 @@
         "y": 13,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9627,8 +10807,13 @@
         "y": 13,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9649,8 +10834,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9671,8 +10861,13 @@
         "y": 14,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9693,8 +10888,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9715,8 +10915,13 @@
         "y": 15,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9737,8 +10942,13 @@
         "y": 16,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9759,8 +10969,13 @@
         "y": 16,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     },
     {
       "p1": {
@@ -9781,12 +10996,19 @@
         "y": 17,
         "type": "point"
       },
-      "color": -8553091,
-      "type": "triangle"
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
     }
   ],
   "my_pitch": {
     "screen_scale": 44.54999923706055,
-    "type": "MyPitch"
+    "my_offset_fields": [],
+    "type": "MyPitch",
+    "invertxy": false
   }
 }

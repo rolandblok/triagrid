@@ -1,0 +1,694 @@
+{
+  "drawables": [
+    {
+      "p1": {
+        "x": 10,
+        "y": 8,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 10.5,
+        "y": 7,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p3": {
+        "x": 11,
+        "y": 8,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "triangle",
+      "RGB": {
+        "red": 200,
+        "green": 200,
+        "blue": 200,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 12,
+        "y": 8,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 12.5,
+        "y": 7,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p3": {
+        "x": 13,
+        "y": 8,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "triangle",
+      "RGB": {
+        "red": 125,
+        "green": 125,
+        "blue": 125,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 13.5,
+        "y": 7,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 14,
+        "y": 8,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p3": {
+        "x": 14.5,
+        "y": 7,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "triangle",
+      "RGB": {
+        "red": 50,
+        "green": 50,
+        "blue": 50,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 8.5,
+        "y": 11,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 7.5,
+        "y": 11,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 8.5,
+        "y": 11,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 9.5,
+        "y": 11,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 9.5,
+        "y": 11,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 10.5,
+        "y": 11,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 10.5,
+        "y": 11,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 11,
+        "y": 12,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 11,
+        "y": 12,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 11.5,
+        "y": 13,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 11.5,
+        "y": 13,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 12,
+        "y": 14,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 12,
+        "y": 14,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 11.5,
+        "y": 15,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 11.5,
+        "y": 15,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 11,
+        "y": 16,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 11,
+        "y": 16,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 10.5,
+        "y": 17,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 10.5,
+        "y": 17,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 9.5,
+        "y": 17,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 9.5,
+        "y": 17,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 8.5,
+        "y": 17,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 8.5,
+        "y": 17,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 7.5,
+        "y": 17,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 7.5,
+        "y": 17,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 7,
+        "y": 16,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 7,
+        "y": 16,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 6.5,
+        "y": 15,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 6.5,
+        "y": 15,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 6,
+        "y": 14,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 6,
+        "y": 14,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 6.5,
+        "y": 13,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 6.5,
+        "y": 13,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 7,
+        "y": 12,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    },
+    {
+      "p1": {
+        "x": 7,
+        "y": 12,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "p2": {
+        "x": 7.5,
+        "y": 11,
+        "type": "point",
+        "RGB": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "type": "RGB"
+        }
+      },
+      "type": "line",
+      "RGB": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "type": "RGB"
+      }
+    }
+  ],
+  "my_pitch": {
+    "screen_scale": 30,
+    "my_offset_fields": [],
+    "type": "MyPitch",
+    "invertxy": false
+  }
+}

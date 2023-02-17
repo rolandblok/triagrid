@@ -26,13 +26,14 @@ class MyTriangle extends MyElement {
     ps.put(TSide.RIGHT, sort_list.get(2));
     
     hatch_density = 2;
-    c = color(255,55,55);
+    c = c_arg;
+    color hc = color(255,55,55);
     PVector p0 = ps.get(TSide.MID).p;
     PVector p1 = ps.get(TSide.LEFT).p;
     PVector p2 = ps.get(TSide.RIGHT).p;  
 
     if (green(c_arg) < 255/3) {    
-      c = color(55,255,55);
+      hc = color(55,255,55);
       hatch_density = 4;
       if (ps.get(TSide.LEFT).p.y < ps.get(TSide.MID).p.y) {
         p0 = ps.get(TSide.LEFT).p;
@@ -44,8 +45,8 @@ class MyTriangle extends MyElement {
         p2 = ps.get(TSide.LEFT).p;        
       }
     } else if (green(c_arg) < 2*255/3) {
-      c = color(55,55,255);
-      hatch_density = 7;
+      hc = color(55,55,255);
+      hatch_density = 6;
       if (ps.get(TSide.LEFT).p.y < ps.get(TSide.MID).p.y) {
         p0 = ps.get(TSide.RIGHT).p;
         p1 = ps.get(TSide.MID).p;
@@ -68,7 +69,7 @@ class MyTriangle extends MyElement {
       PVector pb= PVector.lerp(p0, p2, l);
       //PVector pa = PVector.add(p0, PVector.mult(PVector.sub(p1, p0), l));             
       //PVector pb = PVector.add(p0, PVector.mult(PVector.sub(p2, p0), l));   
-      MyLine hatch = new MyLine(new MyPoint(pa), new MyPoint(pb), c); 
+      MyLine hatch = new MyLine(new MyPoint(pa), new MyPoint(pb), hc); 
       hatches.add(hatch);
     }
 
@@ -147,7 +148,8 @@ class MyTriangle extends MyElement {
     json.setJSONObject("p1", ps.get(TSide.LEFT).getJSON());
     json.setJSONObject("p2", ps.get(TSide.MID).getJSON());
     json.setJSONObject("p3", ps.get(TSide.RIGHT).getJSON());
-    json.setInt("color", c);
+    setJSONColor(json, c);
+    
     
     return json;
   }
@@ -156,8 +158,9 @@ class MyTriangle extends MyElement {
       MyPoint p1 = new MyPoint(json.getJSONObject("p1"));
       MyPoint p2 = new MyPoint(json.getJSONObject("p2"));
       MyPoint p3 = new MyPoint(json.getJSONObject("p3"));
-      color col = json.getInt("color");
-      createMe(p1, p2, p3, col);
+      color c = getJSONColor(json);
+      
+      createMe(p1, p2, p3, c);
     } else {
       println("fail triangle" + json.getString("type"));
     }

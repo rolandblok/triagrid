@@ -70,7 +70,7 @@ class MyLine extends MyElement {
     json.setString("type", my_type);
     json.setJSONObject("p1", ps[0].getJSON());
     json.setJSONObject("p2", ps[1].getJSON());    
-    json.setInt("color", c);
+    setJSONColor(json, c);
     
     return json;
   }
@@ -79,7 +79,7 @@ class MyLine extends MyElement {
     if (json.getString("type").equals("line")) {
       MyPoint p1 = new MyPoint(json.getJSONObject("p1"));
       MyPoint p2 = new MyPoint(json.getJSONObject("p2"));
-      color col = json.getInt("color");
+      color col = getJSONColor(json);
       createMe(p1, p2, col);
     }
   }

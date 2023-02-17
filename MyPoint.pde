@@ -57,7 +57,7 @@ class MyPoint extends MyElement {
     json.setString("type", my_type);
     json.setFloat("x", p.x);
     json.setFloat("y", p.y);
-    json.setInt("color", c);
+    setJSONColor(json, c);
     
     return json;
   }
@@ -67,7 +67,8 @@ class MyPoint extends MyElement {
       
       float _x = json.getFloat("x");
       float _y = json.getFloat("y");
-      color col = json.getInt("color");
+      color col = getJSONColor(json);
+      
       createMe(_x, _y, col);
     }
   }
