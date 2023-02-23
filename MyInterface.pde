@@ -1,9 +1,18 @@
 
+import uibooster.*;
+import uibooster.model.*;
+
+//https://milchreis.github.io/uibooster-for-processing/reference/uibooster/UiBooster.html
+UiBooster booster;
 
 boolean triangle_fill_mode_on = false;
 boolean move_mode_on = false;
 
 color active_color = color(0);
+
+void myInterFaceSetup() {
+    booster = new UiBooster();
+}
 
 void mouseMoved() {
   PVector mouse_p = new PVector(mouseX, mouseY);
@@ -24,11 +33,11 @@ void mousePressed() {
   } 
 }
 
-String KEY_MANUAL = " " + 
+String KEY_MANUAL =  
   " s : save json \n" +
   " l : load json \n" + 
   " t : toggle line / hatching(triangle) mode \n"  +
-  "   in TRIANGLE mode: " +
+  "   in TRIANGLE mode: \n" +
   "     f :  flood fill hatching \n"+ 
   "     g : flood erase hatching \n"+ 
   "     123 : hatching  \n"+
@@ -36,15 +45,16 @@ String KEY_MANUAL = " " +
   "     1234546789 : draw line in numbered direction \n" +
   " m : toggle drawing move mode \n" +
   "     1234546789 : move the drawing \n" +
-  " y/u : create / removedistortion field " + 
-  " z : toggle draw grid "+ 
-  " x : toggle draw lines "+ 
-  " c : toggle draw hatches "+ 
-  " -= : scale "+ 
-  " [] : aspect " +
-  " p : print to svg and gcode " +
-  " C : clear hatching "+ 
-  " n : NEW ";
+  " y/u : create / removedistortion field \n" + 
+  " z : toggle draw grid \n"+ 
+  " x : toggle draw lines \n"+ 
+  " c : toggle draw hatches \n"+ 
+  " -= : scale \n"+ 
+  " [] : aspect \n" +
+  " p : save print to svg and gcode \n" +
+  " C : clear hatching \n"+ 
+  " n : NEW \n";
+
 
 
 
@@ -267,6 +277,11 @@ void keyPressed() {
   } else if (key == 'u') {
     println("remove offsetfield at " + mouseX + " " + mouseY);
     my_pitch.removeOffsetField(mouseX, mouseY);
+  } else if (key == '?') {
+
+            new UiBooster().showInfoDialog(KEY_MANUAL);
+
+
   }
   
   
