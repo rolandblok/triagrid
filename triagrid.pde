@@ -52,7 +52,7 @@ void createGrid() {
 
 
 void setup() {
-  size(1400, 1400);
+  size(1800, 1200);
   surface.setTitle(plot_name);
   
   Locale.setDefault(Locale.US);
