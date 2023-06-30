@@ -47,8 +47,8 @@ class MyGCode extends MyExporter{
 
 
   public MyGCode(PVector pix_min, PVector pix_max, float mm_width, float mm_height) {
-    move_speed = 2000;
-    draw_speed = 700;
+    move_speed = 8000;
+    draw_speed = 8000;
     
     
     layers_gcode_list = new Vector<Vector<String>>();

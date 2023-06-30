@@ -9,7 +9,7 @@ class MyOffsetField {
     public static final String my_type =  "offset_field"; 
   
   private int index(int x, int y) {
-    return x*width + y;
+    return x*height + y;
   }
 
   private void createMe(PVector p, float offset_scl, float noise_scl, float gauss_scl){

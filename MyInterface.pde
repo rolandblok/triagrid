@@ -222,7 +222,7 @@ void keyPressed() {
     String selection = new UiBooster().showSelectionDialog(
         "Select Format",
         "Format?",
-        Arrays.asList("A4 PORTRAIT", "A4 LANDSCAPE", "A3 PORTRAIT", "A3 LANDSCAPE"));
+        Arrays.asList("A4 PORTRAIT", "A4 LANDSCAPE", "A3 PORTRAIT", "A3 LANDSCAPE", "A6 PORTRAIT", "A6 LANDSCAPE"));
     
     String name_ext = "A4POR";
     float p_w = A4_PORTRAIT_WIDTH;
@@ -243,6 +243,14 @@ void keyPressed() {
     } else if (selection == "A3 LANDSCAPE") {
       p_w = A3_PORTRAIT_HEIGHT;
       p_h = A3_PORTRAIT_WIDTH;
+      name_ext = ".A3LAN";
+    } else if (selection == "A6 PORTRAIT") {
+      p_w = A6_PORTRAIT_WIDTH;
+      p_h = A6_PORTRAIT_HEIGHT;
+      name_ext = ".A3POR";
+    } else if (selection == "A6 LANDSCAPE") {
+      p_w = A6_PORTRAIT_HEIGHT;
+      p_h = A6_PORTRAIT_WIDTH;
       name_ext = ".A3LAN";
     }
     
