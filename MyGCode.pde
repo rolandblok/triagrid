@@ -24,7 +24,7 @@ class MyGCode extends MyExporter{
   }
   
   private void pen_up() {
-    String ss = "M5\n";
+    String ss = "M5\nG4 P0.1;\n";
     __add_to_svg(ss);
   }
     
