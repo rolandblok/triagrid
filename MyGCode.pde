@@ -4,6 +4,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
+boolean INVERT_X = false;
+boolean INVERT_Y = true;
+
+PVector END = new PVector(400,400);
 
 class MyGCode extends MyExporter{
   Vector<Vector<String>> layers_gcode_list;
@@ -12,15 +16,19 @@ class MyGCode extends MyExporter{
   
   float pix2mm_scl ;
   PVector pix_offset;
+  PVector pix_scl;
   PVector mm_offset;
+  PVector paper_size;
   
   int draw_speed;
   int move_speed;
   
   private PVector pix2mm(PVector pix) {
-    PVector mm = PVector.mult(PVector.add(pix, pix_offset), pix2mm_scl).add(mm_offset); 
     
-    return mm; 
+    PVector p_scl = new PVector(pix.x * pix_scl.x, pix.y * pix_scl.y); 
+    PVector mm = PVector.mult(PVector.add(p_scl, pix_offset), pix2mm_scl).add(mm_offset); 
+    return mm;     
+    
   }
   
   private void pen_up() {
@@ -47,8 +55,8 @@ class MyGCode extends MyExporter{
 
 
   public MyGCode(PVector pix_min, PVector pix_max, float mm_width, float mm_height) {
-    move_speed = 8000;
-    draw_speed = 8000;
+    move_speed = 4000;
+    draw_speed = 2000;
     
     
     layers_gcode_list = new Vector<Vector<String>>();
@@ -56,6 +64,7 @@ class MyGCode extends MyExporter{
   
     // start determine PIX2MM 
     pix2mm_scl = 1.;
+    pix_scl = new PVector(1., 1.);
     mm_offset = new PVector(0,0);
     pix_offset = PVector.mult(pix_min, -1.);
 
@@ -77,11 +86,20 @@ class MyGCode extends MyExporter{
 
     
     //determine the center offset : mm_offset
-    PVector paper_size = new PVector(mm_width, mm_height); //<>//
+    paper_size = new PVector(mm_width, mm_height); //<>//
     println(" paper_size " + paper_size);
     PVector mm_size = pix2mm(pix_max);
     mm_offset = PVector.sub(paper_size, mm_size).mult(0.5);
     
+    if ( INVERT_Y ) {
+      pix_scl.y = -1;
+      pix_offset.y = -pix_offset.y + (pix_max.y-pix_min.y);
+    }
+    if ( INVERT_X ) {
+      pix_scl.x = -1;
+      pix_offset.x = -pix_offset.x + (pix_max.x-pix_min.x);
+    }
+
 
 /*   
 G1 F2000 x0 Y0
@@ -95,6 +113,9 @@ M5
 
 
   void finalize() {
+    //String ss = String.format("G1 F%d X%.3f Y%.3f\n", (int)draw_speed, END.x, END.y);
+    //__add_to_svg(ss);
+
   }
 
 
@@ -113,7 +134,7 @@ M5
     __add_to_svg(ss);
   }
 
-  void start_path(String c, int strokewidth, PVector p_pix)
+  void start_path(String c, int strokewidth, PVector p_pix , int hor_rep, int ver_rep)
   {
       PVector p_mm = pix2mm(p_pix);
       String ss = String.format("G1 F%d X%.3f Y%.3f\n", (int)move_speed, p_mm.x, p_mm.y);
@@ -121,9 +142,11 @@ M5
       pen_down();
   }
 
-  void add_path(PVector p_pix)
+  void add_path(PVector p_pix , int hor_rep, int ver_rep)
   {
       PVector p_mm = pix2mm(p_pix);
+      PVector rep = new PVector(paper_size.x * hor_rep, paper_size.y * ver_rep);
+      p_mm.add(rep);
       String ss = String.format("G1 F%d X%.3f Y%.3f\n", (int)draw_speed, p_mm.x, p_mm.y);
       __add_to_svg(ss);
   }

@@ -9,9 +9,11 @@ import java.util.*;
 
 class MySvg extends MyExporter{
   Vector<String> svg_list;
+  PVector paper_size;
 
   public MySvg(PVector pix_min, PVector pix_max, float mm_width, float mm_height) {
     
+    paper_size = new PVector(mm_width, mm_height);
     svg_list = new Vector<String>();
 
     PVector pix_size = PVector.sub(pix_max, pix_min);
@@ -50,9 +52,11 @@ class MySvg extends MyExporter{
     __add_to_svg(ss);
   }
 
-  void start_path(String c, int strokewidth, PVector point_arg)
+  void start_path(String c, int strokewidth, PVector point_arg, int hor_rep, int ver_rep)
   {
     PVector point = point_arg.copy();
+    PVector rep = new PVector(paper_size.x * hor_rep, paper_size.y * ver_rep);
+    point.add(rep);
       String ss = "";
       ss += "<path fill='none' stroke='" + c + "' paint-order='fill stroke markers' stroke-opacity='1' stroke-linecap='round' stroke-miterlimit='10' stroke-dasharray=''\n";
       ss += "d= '";
@@ -61,9 +65,11 @@ class MySvg extends MyExporter{
       __add_to_svg(ss);
   }
 
-  void add_path(PVector point_arg)
+  void add_path(PVector point_arg, int hor_rep, int ver_rep)
   {
     PVector point = point_arg.copy();
+    PVector rep = new PVector(paper_size.x * hor_rep, paper_size.y * ver_rep);
+    point.add(rep);
       String ss = "L";
       ss += point.x + " " + point.y + " \n";
       __add_to_svg(ss);

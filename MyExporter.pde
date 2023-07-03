@@ -16,9 +16,9 @@ abstract class  MyExporter{
   abstract void start_layer(String c) ;
   abstract void end_layer();
 
-  abstract void start_path(String c, int strokewidth, PVector point_arg);
+  abstract void start_path(String c, int strokewidth, PVector point_arg, int hor_rep, int ver_rep);
 
-  abstract void add_path(PVector point_arg);
+  abstract void add_path(PVector point_arg, int hor_rep, int ver_rep);
 
   abstract void end_path();
 

@@ -57,6 +57,7 @@ class MyTriangle extends MyElement {
         p2 = ps.get(TSide.RIGHT).p;        
       }    
     } 
+    c= hc;
     
     p = new PVector((p0.x + p1.x + p2.x)/3, (p0.y + p1.y + p2.y)/3);
 
@@ -75,10 +76,11 @@ class MyTriangle extends MyElement {
 
   }
   String getStrColor() {
-    return "#"+Integer.toHexString( (int)red(c)) + Integer.toHexString( (int)green(c)) +Integer.toHexString( (int)blue(c));
-     //String.format("%02d", (int)red(c))  +
-     //String.format("%02d", (int)green(c)) +
-     //String.format("%02d", (int)blue(c))  ;
+    //return "#"+Integer.toHexString( (int)red(c)) + Integer.toHexString( (int)green(c)) +Integer.toHexString( (int)blue(c));
+    return "#" +
+     String.format("%02X", (int)red(c))  +
+     String.format("%02X", (int)green(c)) +
+     String.format("%02X", (int)blue(c))  ;
   }
   
   void move(PVector d) {

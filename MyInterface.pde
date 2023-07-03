@@ -10,6 +10,10 @@ boolean move_mode_on = false;
 
 color active_color = color(0);
 
+int   horizontal_repeats = 1;
+int   vertical_repeats = 1;
+
+
 void myInterFaceSetup() {
     booster = new UiBooster();
 }
@@ -52,6 +56,7 @@ String KEY_MANUAL =
   " -= : scale \n"+ 
   " [] : aspect \n" +
   " p : save print to svg and gcode \n" +
+  " r : set repeat x - y (for postcard for exmaple)    " +
   " C : clear hatching \n"+ 
   " n : NEW \n";
 
@@ -247,11 +252,11 @@ void keyPressed() {
     } else if (selection == "A6 PORTRAIT") {
       p_w = A6_PORTRAIT_WIDTH;
       p_h = A6_PORTRAIT_HEIGHT;
-      name_ext = ".A3POR";
+      name_ext = ".A6POR";
     } else if (selection == "A6 LANDSCAPE") {
       p_w = A6_PORTRAIT_HEIGHT;
       p_h = A6_PORTRAIT_WIDTH;
-      name_ext = ".A3LAN";
+      name_ext = ".A6LAN";
     }
     
     MyPaths paths = new MyPaths(drawables);
@@ -262,19 +267,29 @@ void keyPressed() {
     String filename = sketchPath() + "/gcode/" + plot_name + name_ext;
     
     MyGCode gcode = new MyGCode(min, max, p_w, p_h);
-    paths.draw(gcode);
+    paths.draw(gcode, horizontal_repeats, vertical_repeats);
     gcode.finalize();
     gcode.save(filename);
 
     filename = sketchPath() + "/svg/" + plot_name + name_ext;
     
     MySvg svg = new MySvg(min, max, p_w, p_h);
-    paths.draw(svg);
+    println(" offset p_w: " + p_w + "  p_h: " + p_h);
+    paths.draw(svg, horizontal_repeats, vertical_repeats);
     svg.finalize();
     svg.save(filename);
 
     filename = sketchPath() + "/png/" + plot_name + ".png";
     save(filename);
+  } else if (key == 'r') {
+    UiBooster booster = new UiBooster();
+    Form form = booster.createForm("set repeat")
+            .addSlider("Horizontal Repeats", 0, 4, 1, 4, 1)
+            .addSlider("Vertical Repeats", 0, 4, 1, 4, 1)
+            .show();
+    horizontal_repeats = (int) (form.getByLabel("Horizontal Repeats").getValue());
+    vertical_repeats   = (int) (form.getByLabel("Vertical Repeats").getValue());
+    println("set repeat hor: " + horizontal_repeats + " ver: " + vertical_repeats);
   } else if (key == 'i') {
     my_pitch.invertXY = !my_pitch.invertXY;    
   } else if (key == 'q') {

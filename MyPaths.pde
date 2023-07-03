@@ -23,6 +23,7 @@ class MyPaths {
           String c_str = t.getStrColor();
           Vector<MyLine> hatch_layer = layered_lines.get(c_str);
           if(hatch_layer == null){
+            println(" MyPaths :add hatch layer with " + c_str);
             hatch_layer = new Vector<MyLine>();
             layered_lines.put(c_str, hatch_layer);
           }
@@ -59,6 +60,7 @@ class MyPaths {
       for (Map.Entry<String,  Vector<MyLine>> layer_set : layered_lines.entrySet()) {
          LinkedList<LinkedList<PVector>> paths_list = new LinkedList<LinkedList<PVector>>();
          createPathsLayer(layer_set.getValue(), paths_list);
+         println(" create paths: new layer key :" + layer_set.getKey());
          layered_paths_list.put(layer_set.getKey(), paths_list);
       }
       
@@ -217,23 +219,29 @@ class MyPaths {
   
   }
   
-  void draw(MyExporter svg)
+  void draw(MyExporter svg, int hor_rep, int ver_rep)
   {
     //HashMap<String, LinkedList<   LinkedList<      PVector>>> layered_paths_list;
   
     for (Map.Entry<String,  LinkedList<LinkedList<PVector>>> layer_paths : layered_paths_list.entrySet()) {
        String c_str =  layer_paths.getKey();
+       
        LinkedList<LinkedList<PVector>> paths_list = layer_paths.getValue();
        svg.start_layer(c_str);
-       for (LinkedList<PVector> path : paths_list) { 
-         Iterator<PVector> vec_it = path.iterator();
-         svg.start_path(c_str, thickness,  my_pitch.G2S(vec_it.next()));
-         while (vec_it.hasNext()) {
-           svg.add_path( my_pitch.G2S(vec_it.next()));
+       for (int hr = 0; hr < hor_rep ; hr++) {
+         for (int vr = 0; vr < ver_rep ; vr++) {
+           for (LinkedList<PVector> path : paths_list) { 
+             Iterator<PVector> vec_it = path.iterator();
+             svg.start_path(c_str, thickness,  my_pitch.G2S(vec_it.next()), hr, vr);
+             while (vec_it.hasNext()) {
+               svg.add_path( my_pitch.G2S(vec_it.next()), hr, vr);
+             }
+             svg.end_path();
+           }
          }
-         svg.end_path();
        }
        svg.end_layer();
+       
     }
     
   }
