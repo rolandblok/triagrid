@@ -137,6 +137,8 @@ M5
   void start_path(String c, int strokewidth, PVector p_pix , int hor_rep, int ver_rep)
   {
       PVector p_mm = pix2mm(p_pix);
+      PVector rep = new PVector(paper_size.x * hor_rep, paper_size.y * ver_rep);
+      p_mm.add(rep);
       String ss = String.format("G1 F%d X%.3f Y%.3f\n", (int)move_speed, p_mm.x, p_mm.y);
       __add_to_svg(ss);
       pen_down();
